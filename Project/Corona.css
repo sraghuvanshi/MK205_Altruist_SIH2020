@@ -363,4 +363,45 @@
   -webkit-box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 55px 50px -35px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
           box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 55px 50px -35px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
 }
+
+.Errorpage .page_404 {
+  padding: 40px 0;
+  background: #fff;
+  font-family: "Arvo", serif;
+}
+
+.Errorpage .page_404 img {
+  width: 100%;
+}
+
+.Errorpage .four_zero_four_bg {
+  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  height: 400px;
+  background-position: center;
+}
+
+.Errorpage .four_zero_four_bg h1 {
+  font-size: 80px;
+}
+
+.Errorpage .four_zero_four_bg h3 {
+  font-size: 80px;
+}
+
+.Errorpage .link_404 {
+  color: #fff !important;
+  padding: 10px 20px;
+  background: #39ac31;
+  margin: 20px 0;
+  display: inline-block;
+}
+
+.Errorpage .contant_box_404 {
+  margin-top: -50px;
+}
+
+.Errorpage .contant_box_404 a {
+  border-radius: 10px;
+  text-decoration: none;
+}
 /*# sourceMappingURL=Corona.css.map */

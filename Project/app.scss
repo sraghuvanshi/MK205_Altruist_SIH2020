@@ -196,7 +196,7 @@
         padding: 20px;
         z-index: 1;
         &:hover {
-          color: #918f8f;
+          color: white;
           padding-bottom: 10px;
         }
       }
@@ -222,29 +222,40 @@
       }
 
       .covid {
-        right: 19rem;
-
+        a {
+          right: 19rem;
+          :hover::before {
+            background-color: transparent;
+          }
+        }
         &:hover {
-          background-color: rgb(250, 48, 48);
+          background-color: white;
         }
       }
 
       h2 {
-        position: absolute;
-        z-index: 1;
-        top: 0.5rem;
-        right: 2rem;
-        padding: 10px;
-        border: 2px solid white;
-        border-radius: 7px;
-        color: #ffffff;
-        font-family: pnBold;
-        font-size: 20px;
-        width: 150px;
-        text-align: center;
-        &:hover {
-          background-color: #5fc5ff;
-          color: #000000;
+        a {
+          position: absolute;
+          z-index: 1;
+          top: 2rem;
+          right: 2rem;
+          padding: 10px;
+          border: 2px solid blueviolet;
+          border-radius: 7px;
+          color: #ffffff;
+          font-family: pnBold;
+          font-size: 20px;
+          width: 150px;
+          text-align: center;
+          &:hover {
+            background-color: white;
+            color: black;
+            border: none;
+          }
+
+          &:hover::before {
+            background-color: transparent;
+          }
         }
       }
 
@@ -301,7 +312,7 @@
                 width: 150px;
                 text-align: center;
                 &:hover {
-                  background-color: rgb(247, 175, 41);
+                  background-color: white;
                   color: #000000;
                 }
               }
@@ -414,7 +425,7 @@
 
     .cards {
       background-color: #111111;
-      height: 160vh;
+      height: 180vh;
 
       .title {
         text-align: center;
@@ -454,6 +465,7 @@
         text-align: center;
         position: relative;
         top: 17rem;
+        padding-top: 80px;
       }
 
       .cards-list2 {
@@ -524,6 +536,7 @@
           font-family: pnBold;
           font-size: 20px;
           margin-top: 165px;
+          color: rgb(248, 152, 69);
         }
         p {
           background-color: rgb(12, 12, 12);
@@ -546,7 +559,8 @@
       }
 
       .title-black {
-        color: #4093f8;
+        // color: #4093f8;
+        color: white;
       }
 
       @media all and (max-width: 500px) {

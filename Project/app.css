@@ -214,7 +214,7 @@
 }
 
 .landingPage .wrapper .nav a:hover {
-  color: #918f8f;
+  color: white;
   padding-bottom: 10px;
 }
 
@@ -238,21 +238,25 @@
   background-color: #5fc5ff;
 }
 
-.landingPage .wrapper .nav .covid {
+.landingPage .wrapper .nav .covid a {
   right: 19rem;
 }
 
-.landingPage .wrapper .nav .covid:hover {
-  background-color: #fa3030;
+.landingPage .wrapper .nav .covid a :hover::before {
+  background-color: transparent;
 }
 
-.landingPage .wrapper .nav h2 {
+.landingPage .wrapper .nav .covid:hover {
+  background-color: white;
+}
+
+.landingPage .wrapper .nav h2 a {
   position: absolute;
   z-index: 1;
-  top: 0.5rem;
+  top: 2rem;
   right: 2rem;
   padding: 10px;
-  border: 2px solid white;
+  border: 2px solid blueviolet;
   border-radius: 7px;
   color: #ffffff;
   font-family: pnBold;
@@ -261,9 +265,14 @@
   text-align: center;
 }
 
-.landingPage .wrapper .nav h2:hover {
-  background-color: #5fc5ff;
-  color: #000000;
+.landingPage .wrapper .nav h2 a:hover {
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+.landingPage .wrapper .nav h2 a:hover::before {
+  background-color: transparent;
 }
 
 .landingPage .wrapper .nav i {
@@ -324,7 +333,7 @@
 }
 
 .landingPage .wrapper .container .carousel .carousel-inner .item .carousel-caption button:hover {
-  background-color: #f7af29;
+  background-color: white;
   color: #000000;
 }
 
@@ -423,7 +432,7 @@
 
 .landingPage .wrapper .cards {
   background-color: #111111;
-  height: 160vh;
+  height: 180vh;
 }
 
 .landingPage .wrapper .cards .title {
@@ -469,6 +478,7 @@
   text-align: center;
   position: relative;
   top: 17rem;
+  padding-top: 80px;
 }
 
 .landingPage .wrapper .cards .cards-list2 {
@@ -542,6 +552,7 @@
   font-family: pnBold;
   font-size: 20px;
   margin-top: 165px;
+  color: #f89845;
 }
 
 .landingPage .wrapper .cards .card .card_title p {
@@ -564,7 +575,7 @@
 }
 
 .landingPage .wrapper .cards .title-black {
-  color: #4093f8;
+  color: white;
 }
 
 @media all and (max-width: 500px) {
