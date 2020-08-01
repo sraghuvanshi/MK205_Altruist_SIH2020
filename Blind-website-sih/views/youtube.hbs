@@ -1,0 +1,45 @@
+<body onload="youtube();">
+    <!-- <button id="btnGiveCommand">Give Command!</button>
+    <br /><br /> -->
+    <span id="message"></span>
+    <br /><br />
+    <div class="heading">
+        <img src="./img/b22a94b0b673344e2afde7c8c46f567a.png" alt="" />
+    </div>
+
+    <div class="snackbar-parent">
+        <div id="snackbar" class="youtube">
+            <div class="logo">
+                <img id="logo" src="./img/youtube-logo-png-46020.png" alt="" />
+            </div>
+            <div class="listening">
+                <div id="icon-mic"></div>
+            </div>
+            <div class="form">
+                <form action="https://www.youtube.com/search">
+                    <input class="searchBox" type="search" id="q" name="q" size="60" />
+                    <!-- <input
+              type="button"
+              value="Click to Speak"
+              onclick="recognition.start();"
+            /> -->
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+    <script>
+        // var form = document.querySelector("#formYoutube");
+        var recognition = new webkitSpeechRecognition();
+        //   var utterance = new SpeechSynthesisUtterance("Please click and speak");
+        recognition.onresult = function (event) {
+            if (event.results.length > 0) {
+                q.value = event.results[0][0].transcript;
+                q.form.submit();
+            }
+        };
+
+        recognition.start();
+    </script>
+</body>

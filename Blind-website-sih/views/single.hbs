@@ -1,0 +1,275 @@
+<body onload="speech();">
+    <!-- <button id="btnGiveCommand">Give Command!</button>
+    <br /><br /> -->
+    <span id="message"></span>
+    <br /><br />
+    <div class="heading">
+        <img src="./img/b22a94b0b673344e2afde7c8c46f567a.png" alt="">
+    </div>
+    <div class="link-parent single">
+        <div id="zoom">
+            <ul class="tg-list">
+
+                <li class="tg-list-item i1 animated fadeInLeft">
+                    <a href="/whatsNew" class="button">
+                        <div class="content-parent">
+                            <div class="content">
+                                <p>Mahatma Gandhi National Rural Employment Guarantee Act</p>
+                                <img src="http://ruraldiksha.nic.in/RuralDashboard/images/MGNREGA.png" alt="">
+                                <p class="stats">National Rural Employment Guarantee Act 2005 (or, NREGA No 42, later
+                                    renamed as the "Mahatma Gandhi National Rural Employment Guarantee Act", MGNREGA),
+                                    is an Indian labour law and social security measure that aims to guarantee the
+                                    'right to work'.This act was passed in September 2005
+
+                                    It aims to enhance livelihood security in rural areas by providing at least 100 days
+                                    of wage employment in a financial year to every household whose adult members
+                                    volunteer to do unskilled manual work.
+
+                                    The act was first proposed in 1991 by P.V. Narasimha Rao.It was finally accepted in
+                                    the parliament and commenced implementation in 625 districts of India. Based on this
+                                    pilot experience, NREGA was scoped up to cover all the districts of India from 1
+                                    April 2008. The statute is hailed by the government as "the largest and most
+                                    ambitious social security and public works programme in the world". In its World
+                                    Development Report 2014, the World Bank termed it a "stellar example of rural
+                                    development".
+
+                                    The MGNREGA was initiated with the objective of "enhancing livelihood security in
+                                    rural areas by providing at least 100 days of guaranteed wage employment in a
+                                    financial year, to every household whose adult members volunteer to do unskilled
+                                    manual work". Another aim of MGNREGA is to create durable assets (such as roads,
+                                    canals, ponds and wells). Employment is to be provided within 5 km of an applicant's
+                                    residence, and minimum wages are to be paid. If work is not provided within 15 days
+                                    of applying, applicants are entitled to an unemployment allowance. Thus, employment
+                                    under MGNREGA is a legal entitlement.
+
+                                    MGNREGA is to be implemented mainly by gram panchayats (GPs). The involvement of
+                                    contractors is banned.
+
+                                    Apart from providing economic security and creating rural assets, NREGA can help in
+                                    protecting the environment, empowering rural women, reducing rural-urban migration
+                                    and fostering social equity, among others."
+
+                                    The law provides many safeguards to promote its effective management and
+                                    implementation. The act explicitly mentions the principles and agencies for
+                                    implementation, list of allowed works, financing pattern, monitoring and evaluation,
+                                    and most importantly the detailed measures to ensure transparency and
+                                    accountability.</p>
+                            </div>
+                            <!-- <div class="right">
+                  <input class="tgl tgl-ios" id="cb1" type="checkbox" />
+                  <label class="tgl-btn" for="cb1"></label>
+                </div> -->
+
+                        </div>
+                    </a>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="snackbar-parent">
+        <div id="snackbar" class="youtube">
+            <div class="logo">
+                <img id="logo" src="./img/youtube-logo-png-46020.png" alt="">
+            </div>
+            <div class="listening">
+                <div id="icon-mic"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="snackbar-parent">
+        <div id="snackbar" class="google">
+            <div class="logo">
+                <img id="logo" src="http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c51f.png" alt="">
+            </div>
+            <div class="listening">
+                <div id="icon-mic"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="voiceinator">
+        <select name="voice" id="voices">
+            <option value="">Select a voice</option>
+        </select>
+        <button id="stop">Stop!</button>
+        <button id="speak">Speak</button>
+    </div>
+
+    <script src="./js/magnify.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        var message = document.querySelector('#message');
+
+        var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+        var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList;
+
+        var grammar = '#JSGF V1.0;'
+
+        var recognition = new SpeechRecognition();
+        var speechRecognitionList = new SpeechGrammarList();
+        speechRecognitionList.addFromString(grammar, 1);
+        recognition.grammars = speechRecognitionList;
+        recognition.lang = 'en-US';
+        recognition.interimResults = false;
+
+        recognition.onresult = function (event) {
+            var last = event.results.length - 1;
+            var command = event.results[last][0].transcript;
+            message.textContent = 'Voice Input: ' + command + '.';
+
+            if (command.toLowerCase() === "1") {
+                document.querySelector('#cb1').checked = true;
+                var url = "./programmes";
+                window.location = url;
+            }
+            else if (command.toLowerCase() === '2' || command.toLowerCase() === 'tu') {
+                document.querySelector('#cb2').checked = true;
+                var url = "./programmes";
+                window.location = url;
+            }
+            else if (command.toLowerCase() === '3' || command.toLowerCase() === 'free') {
+                document.querySelector('#cb3').checked = true;
+                var url = "./whatsNew";
+                window.location = url;
+            }
+            else if (command.toLowerCase() === '4') {
+                document.querySelector('#cb4').checked = true;
+                var url = "./books";
+                window.location = url;
+            }
+            else if (command.toLowerCase() === '5' || command.toLowerCase() === 'wife') {
+                document.querySelector('#cb5').checked = true;
+                var url = "./whatsNew";
+                window.location = url;
+            }
+            else if (command.toLowerCase() === '6' || command.toLowerCase() === 'sex') {
+                document.querySelector('#cb6').checked = true;
+                var url = "./books";
+                window.location = url;
+            }
+            else if (command.toLowerCase() === '7') {
+                document.querySelector('#cb7').checked = true;
+                var url = "./whatsNew";
+                window.location = url;
+            }
+            else if (command.toLowerCase() === '8') {
+                document.querySelector('#cb2').checked = true;
+                var url = "./programmes";
+                window.location = url;
+            }
+            else if (command.toLowerCase() === '9') {
+                document.querySelector('#cb3').checked = true;
+                var url = "./whatsNew.html";
+                window.location = url;
+            }
+            else if (command.toLowerCase() === '10') {
+                document.querySelector('#cb3').checked = true;
+                var url = "./books";
+                window.location = url;
+            }
+            else if (command.toLowerCase() === 'back') {
+                // document.querySelector('#cb7').checked = true;
+                var url = "./";
+                window.location = url;
+            }
+        };
+
+        recognition.onspeechend = function () {
+            recognition.start();
+        };
+
+        recognition.onerror = function (event) {
+            message.textContent = "Error occurred in recognition: " + event.error;
+        };
+
+        // Activating speech recognition
+
+        // mouse click activated
+        document.addEventListener("click", () => {
+            recognition.start();
+        });
+        document.addEventListener("keydown", function (zEvent) {
+            // ctrl key activated
+            if (zEvent.ctrlKey) {
+                recognition.start();
+            }
+            // spacebar activated
+            if (zEvent.keyCode == 32) {
+                recognition.start();
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        /**
+      * Returns the text from a HTML string
+      *
+      * @param {html} String The html string
+      */
+        function stripHtml(html) {
+            // Create a new div element
+            var temporalDivElement = document.createElement("div");
+            // Set the HTML content with the providen
+            temporalDivElement.innerHTML = html;
+            // Retrieve the text property of the element (cross-browser support)
+            return temporalDivElement.textContent || temporalDivElement.innerText || "";
+        }
+
+        var htmlString = "<div><p>National Rural Employment Guarantee Act 2005 (or, NREGA No 42, later renamed as the Mahatma Gandhi National Rural Employment Guarantee Act, MGNREGA), is an Indian labour law and social security measure that aims to guarantee the 'right to work'.</p></div>";
+
+        //Hello World
+        //It's me, Mario
+        var y = stripHtml(htmlString);
+        // console.log(stripHtml(htmlString));
+        console.log(y);
+
+    </script>
+
+    <script>
+        var speech = function () {
+            // Text to speech
+            const msg = new SpeechSynthesisUtterance();
+            let voices = [];
+            const voicesDropdown = document.querySelector('[name="voice"]');
+            const speakButton = document.querySelector("#speak");
+            const stopButton = document.querySelector("#stop");
+
+            msg.text = `${y}`;
+
+            function populateVoices() {
+                voices = this.getVoices();
+                voicesDropdown.innerHTML = voices
+                    .map(
+                        (voice) =>
+                            `<option value="${voice.name}">${voice.name} (${voice.lang})</option>`
+                    )
+                    .join("");
+            }
+
+            function setVoice() {
+                msg.voice = voices.find((voice) => voice.name === this.value);
+                toggle();
+            }
+
+            function toggle(startOver = true) {
+                speechSynthesis.cancel();
+                if (startOver) {
+                    speechSynthesis.speak(msg);
+                }
+            }
+
+            speechSynthesis.addEventListener("voiceschanged", populateVoices);
+            voicesDropdown.addEventListener("change", setVoice);
+            speakButton.addEventListener("click", toggle);
+            stopButton.addEventListener("click", () => toggle(false));
+
+
+            toggle();
+        }
+    </script>
+
+</body>

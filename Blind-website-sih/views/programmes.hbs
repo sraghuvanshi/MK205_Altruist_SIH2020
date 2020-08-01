@@ -1,0 +1,391 @@
+<body onload="speech();">
+    <!-- <button id="btnGiveCommand">Give Command!</button>
+    <br /><br /> -->
+    <span id="message"></span>
+    <br /><br />
+    <div class="heading heading-prog">
+        <img src="./img/b22a94b0b673344e2afde7c8c46f567a.png" alt="" />
+    </div>
+    <div class="link-parent programmes">
+        <div id="zoom">
+            <ul class="tg-list">
+                <li class="tg-list-item i1 animated fadeInLeft">
+                    <a href="#" class="button">
+                        <div class="content-parent">
+                            <div class="content">
+                                <p>1. MGNREGA</p>
+                                <img src="http://ruraldiksha.nic.in/RuralDashboard/images/MGNREGA.png" alt="" />
+                                <p class="stats">
+                                    1244411000<br />
+                                    Active Workers
+                                </p>
+                            </div>
+                            <div class="right">
+                                <input class="tgl tgl-ios" id="cb1" type="checkbox" />
+                                <label class="tgl-btn" for="cb1"></label>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="tg-list-item i2 animated fadeInLeft">
+                    <a href="#" class="button">
+                        <div class="content-parent">
+                            <div class="content">
+                                <p>2. PMAYG</p>
+                                <img src="https://rural.nic.in/sites/default/files/dash-new-02.jpg" alt="" />
+                                <p class="stats">
+                                    13874720<br />
+                                    Houses Sanctioned
+                                </p>
+                            </div>
+                            <div class="right">
+                                <input class="tgl tgl-ios" id="cb2" type="checkbox" />
+                                <label class="tgl-btn" for="cb2"></label>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="tg-list-item i3 animated fadeInLeft">
+                    <a href="#" class="button">
+                        <div class="content-parent">
+                            <div class="content">
+                                <p>3. NRLM</p>
+                                <img src="https://rural.nic.in/sites/default/files/dash-new-03.jpg" alt="" />
+                                <p class="stats">
+                                    65282774<br />
+                                    Households Mobilized
+                                </p>
+                            </div>
+                            <div class="right">
+                                <input class="tgl tgl-ios" id="cb3" type="checkbox" />
+                                <label class="tgl-btn" for="cb3"></label>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="tg-list-item i4 animated fadeInLeft">
+                    <a href="#" class="button">
+                        <div class="content-parent">
+                            <div class="content">
+                                <p>4. PMGSY</p>
+                                <img src="https://rural.nic.in/sites/default/files/dash-new-04.jpg" alt="" />
+                                <p class="stats">
+                                    1222932<br />
+                                    Completed Road Length (Kms)
+                                </p>
+                            </div>
+                            <div class="right">
+                                <input class="tgl tgl-ios" id="cb4" type="checkbox" />
+                                <label class="tgl-btn" for="cb4"></label>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="tg-list-item i5 animated fadeInLeft">
+                    <a href="#" class="button" onclick="youtube()">
+                        <div class="content-parent">
+                            <div class="content">
+                                <p>5. NSAP</p>
+                                <img src="https://rural.nic.in/sites/default/files/dash-new-05.jpg" alt="" />
+                                <p class="stats">
+                                    32683971<br />
+                                    Total Data Digitized
+                                </p>
+                            </div>
+                            <div class="right">
+                                <input class="tgl tgl-ios" id="cb5" type="checkbox" />
+                                <label class="tgl-btn" for="cb5"></label>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="tg-list-item i6 animated fadeInLeft">
+                    <a href="#" class="button" onclick="google()">
+                        <div class="content-parent">
+                            <div class="content">
+                                <p>6. SAGY</p>
+                                <img src="https://rural.nic.in/sites/default/files/dash-new-06.jpg" alt="" />
+                                <p class="stats">
+                                    1767<br />
+                                    GP's Identified
+                                </p>
+                            </div>
+                            <div class="right">
+                                <input class="tgl tgl-ios" id="cb6" type="checkbox" />
+                                <label class="tgl-btn" for="cb6"></label>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="tg-list-item i7 animated fadeInLeft">
+                    <a href="#" class="button">
+                        <div class="content-parent">
+                            <div class="content">
+                                <p>7. DDUGKY</p>
+                                <img src="https://rural.nic.in/sites/default/files/dash-new-07.jpg" alt="" />
+                                <p class="stats">
+                                    948817<br />
+                                    Candidated Trained
+                                </p>
+                            </div>
+                            <div class="right">
+                                <input class="tgl tgl-ios" id="cb7" type="checkbox" />
+                                <label class="tgl-btn" for="cb7"></label>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="tg-list-item i7 animated fadeInLeft">
+                    <a href="#" class="button">
+                        <div class="content-parent">
+                            <div class="content">
+                                <p>8. MISSION ANTYODAYA</p>
+                                <img src="https://rural.nic.in/sites/default/files/dash-new-08.jpg" alt="" />
+                                <p class="stats">
+                                    247902<br />
+                                    GP's Completed
+                                </p>
+                            </div>
+                            <div class="right">
+                                <input class="tgl tgl-ios" id="cb7" type="checkbox" />
+                                <label class="tgl-btn" for="cb7"></label>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="tg-list-item i7 animated fadeInLeft">
+                    <a href="#" class="button">
+                        <div class="content-parent">
+                            <div class="content">
+                                <p>9. RURBAN</p>
+                                <img src="https://rural.nic.in/sites/default/files/dash-new-09.jpg" alt="" />
+                                <p class="stats">
+                                    300<br />
+                                    Clusters Allocated
+                                </p>
+                            </div>
+                            <div class="right">
+                                <input class="tgl tgl-ios" id="cb7" type="checkbox" />
+                                <label class="tgl-btn" for="cb7"></label>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="snackbar-parent">
+        <div id="snackbar" class="youtube">
+            <div class="logo">
+                <img id="logo" src="./img/youtube-logo-png-46020.png" alt="" />
+            </div>
+            <div class="listening">
+                <div id="icon-mic"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="snackbar-parent">
+        <div id="snackbar" class="google">
+            <div class="logo">
+                <img id="logo" src="http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c51f.png" alt="" />
+            </div>
+            <div class="listening">
+                <div id="icon-mic"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="voiceinator">
+        <select name="voice" id="voices">
+            <option value="">Select a voice</option>
+        </select>
+        <button id="stop">Stop!</button>
+        <button id="speak">Speak</button>
+    </div>
+
+
+    <script src="./js/magnify.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        var message = document.querySelector("#message");
+
+        var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+        var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList;
+
+        var grammar = "#JSGF V1.0;";
+
+        var recognition = new SpeechRecognition();
+        var speechRecognitionList = new SpeechGrammarList();
+        speechRecognitionList.addFromString(grammar, 1);
+        recognition.grammars = speechRecognitionList;
+        recognition.lang = "en-US";
+        recognition.interimResults = false;
+
+        recognition.onresult = function (event) {
+            var last = event.results.length - 1;
+            var command = event.results[last][0].transcript;
+            message.textContent = 'Voice Input: ' + command + '.';
+
+            if (command.toLowerCase() === "1") {
+                document.querySelector('#cb1').checked = true;
+                var url = "./single";
+                window.location = url;
+            }
+            else if (command.toLowerCase() === '2' || command.toLowerCase() === 'tu') {
+                document.querySelector('#cb2').checked = true;
+                var url = "./single";
+                window.location = url;
+            }
+            else if (command.toLowerCase() === '3' || command.toLowerCase() === 'free') {
+                document.querySelector('#cb3').checked = true;
+                var url = "./whatsNew";
+                window.location = url;
+            }
+            else if (command.toLowerCase() === '4') {
+                document.querySelector('#cb4').checked = true;
+                var url = "./books";
+                window.location = url;
+            }
+            else if (command.toLowerCase() === '5' || command.toLowerCase() === 'wife') {
+                document.querySelector('#cb5').checked = true;
+                var url = "./whatsNew";
+                window.location = url;
+            }
+            else if (command.toLowerCase() === '6' || command.toLowerCase() === 'sex') {
+                document.querySelector('#cb6').checked = true;
+                var url = "./books";
+                window.location = url;
+            }
+            else if (command.toLowerCase() === '7') {
+                document.querySelector('#cb7').checked = true;
+                var url = "./whatsNew";
+                window.location = url;
+            }
+            else if (command.toLowerCase() === '8') {
+                document.querySelector('#cb2').checked = true;
+                var url = "./programmes";
+                window.location = url;
+            }
+            else if (command.toLowerCase() === '9') {
+                document.querySelector('#cb3').checked = true;
+                var url = "./whatsNew";
+                window.location = url;
+            }
+            else if (command.toLowerCase() === '10') {
+                document.querySelector('#cb3').checked = true;
+                var url = "./books";
+                window.location = url;
+            }
+            else if (command.toLowerCase() === 'back') {
+                // document.querySelector('#cb7').checked = true;
+                var url = "./";
+                window.location = url;
+            }
+        };
+
+        recognition.onspeechend = function () {
+            recognition.start();
+        };
+
+        recognition.onerror = function (event) {
+            message.textContent = "Error occurred in recognition: " + event.error;
+        };
+
+        // Activating speech recognition
+
+        // mouse click activated
+        document.addEventListener("click", () => {
+            recognition.start();
+        });
+        document.addEventListener("keydown", function (zEvent) {
+            // ctrl key activated
+            if (zEvent.ctrlKey) {
+                recognition.start();
+            }
+            // spacebar activated
+            if (zEvent.keyCode == 32) {
+                recognition.start();
+            }
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        /**
+  * Returns the text from a HTML string
+  *
+  * @param {html} String The html string
+  */
+        function stripHtml(html) {
+            // Create a new div element
+            var temporalDivElement = document.createElement("div");
+            // Set the HTML content with the providen
+            temporalDivElement.innerHTML = html;
+            // Retrieve the text property of the element (cross-browser support)
+            return temporalDivElement.textContent || temporalDivElement.innerText || "";
+        }
+
+        var htmlString = "<div><p>1 MGNREGA</p>\n<p>2 PMAYG</p>\n<p>3 NRLM</p>\n<p>4 PMGSY</p>\n<p>5 NSAP</p>\n<p>6 SAGY</p>\n<p>7 DDUGKY</p>\n<p>8 MISSION ANTYODAYA</p>\n<p>9 RURBAN</p></div>";
+
+
+        console.log(htmlString);
+        var y = stripHtml(htmlString).toLowerCase();
+        console.log(y);
+    </script>
+
+    <script>
+        var speech = function () {
+            // Text to speech
+            const msg = new SpeechSynthesisUtterance();
+            let voices = [];
+            const voicesDropdown = document.querySelector('[name="voice"]');
+            const speakButton = document.querySelector("#speak");
+            const stopButton = document.querySelector("#stop");
+
+            msg.text = `${y}`;
+
+            function populateVoices() {
+                voices = this.getVoices();
+                voicesDropdown.innerHTML = voices
+                    .map(
+                        (voice) =>
+                            `<option value="${voice.name}">${voice.name} (${voice.lang})</option>`
+                    )
+                    .join("");
+            }
+
+            function setVoice() {
+                msg.voice = voices.find((voice) => voice.name === this.value);
+                toggle();
+            }
+
+            function toggle(startOver = true) {
+                speechSynthesis.cancel();
+                if (startOver) {
+                    speechSynthesis.speak(msg);
+                }
+            }
+
+            speechSynthesis.addEventListener("voiceschanged", populateVoices);
+            voicesDropdown.addEventListener("change", setVoice);
+            speakButton.addEventListener("click", toggle);
+            stopButton.addEventListener("click", () => toggle(false));
+
+
+            toggle();
+        }
+    </script>
+
+
+
+</body>
