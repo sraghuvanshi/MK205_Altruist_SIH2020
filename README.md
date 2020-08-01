@@ -1,4 +1,10 @@
-# SMART INDIA HACKATHON 2020 - TEAM ALTRUIST
+<!-- # SMART INDIA HACKATHON 2020 - TEAM ALTRUIST  -->
+<!-- ![Altruist Logo](https://video-altruist.herokuapp.com/assets/logo.png) -->
+
+<h1 align="center">
+	SMART INDIA HACKATHON 2020 - TEAM ALTRUIST
+	<img src="https://video-altruist.herokuapp.com/assets/logo.png" alt="Altruist Logo" width="200">
+</h1>
 
 ## PS DETAILS
 
