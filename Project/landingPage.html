@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../app.css" />
+    <link rel="stylesheet" href="../Animate.css" />
+    <link rel="stylesheet" href="../node_modules/hover.css/css/hover.css" />
+
+    <link rel="stylesheet" href="../assets/css/vendor/fontawesome.css" />
+    <link rel="stylesheet" href="../assets/css/vendor/lightbox.css" />
+    <link rel="stylesheet" href="../assets/css/plugins/plugins.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALTRUIST - Main Landing Page</title>
+  </head>
+  <body>
+    <div class="landingPage">
+      <button
+        onclick="topFunction()"
+        id="myBtn"
+        class="hvr-wobble-vertical"
+        title="Go to top"
+      >
+        <i
+          class="fa fa-chevron-circle-up"
+          class="hvr-sweep-to-top"
+          aria-hidden="true"
+        ></i>
+      </button>
+
+      <div class="wrapper">
+        <div class="nav">
+          <img src="../images/Logo.png" alt="logo" class="logo" />
+
+          <a class="anchor" href="./landingPage.html">Home</a>
+          <a class="anchor" href="#about">About Us</a>
+          <a class="anchor" href="https://blind-altruist.herokuapp.com/"
+            >Visually Impaired</a
+          >
+          <!-- <a class="anchor" href="./Deaf.html">Hearing Impaired</a>
+          <a class="anchor" href="./Deaf.html">Speech Impaired</a> -->
+          <a class="anchor" href="./Dimmenia.html">Dimentia</a>
+          <h2 class="covid"><a href="">Covid-19</a></h2>
+          <h2><a href="#screenshot">Gallery</a></h2>
+        </div>
+
+        <div class="container">
+          <div
+            id="myCarousel"
+            class="carousel slide"
+            data-ride="carousel"
+            data-interval="2000"
+          >
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li
+                data-target="#myCarousel"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="../images/Carousel.png" alt="Los Angeles" />
+                <div class="carousel-caption">
+                  <h3>
+                    Great opportunities <br />
+                    to help others seldom come, <br />
+                    but small ones <br />
+                    surround us every day
+                  </h3>
+                  <button>Notify Me</button>
+                  <h2>Explore More</h2>
+                  <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                </div>
+              </div>
+
+              <div class="item">
+                <img src="../images/banner2.jpg" alt="Chicago" />
+                <div class="carousel-caption">
+                  <h3>
+                    Great opportunities <br />
+                    to help others seldom come, <br />
+                    but small ones <br />
+                    surround us every day
+                  </h3>
+                  <button>Notify Me</button>
+                  <h2>Explore More</h2>
+                  <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                </div>
+              </div>
+
+              <div class="item">
+                <img src="../images/banner2.png" alt="New york" />
+                <div class="carousel-caption">
+                  <h3>
+                    Great opportunities <br />
+                    to help others seldom come, <br />
+                    but small ones <br />
+                    surround us every day
+                  </h3>
+                  <button>Notify Me</button>
+                  <h2>Explore More</h2>
+                  <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="aboutUs">
+          <div class="ministerPic">
+            <img src="../images/narenda singh tomar.jpg" alt="" />
+          </div>
+
+          <div class="aboutTaken">
+            <div class="col-lg-7">
+              <div class="about-inner inner pt--100 pt_sm--40 pt_md--40">
+                <div class="section-title">
+                  <h2 id="about" class="title">About Us</h2>
+                  <h2 class="team">TEAM Altruist</h2>
+                  <p class="description">
+                    Meaning of altruist is -"A person unselfishly concerned for
+                    or devoted to the welfare of others".Our team has choosen an
+                    problem statment MK205 under the
+                    <b>Ministry of Rural Development</b> and we will be helping
+                    the 20% of the population who are differntially abeled and
+                    need our help and the technology to give them a better life
+                  </p>
+                </div>
+                <div class="tab-wrapper mt--30">
+                  <ul
+                    class="nav nav-tabs tab-style--1"
+                    id="myTab"
+                    role="tablist"
+                  >
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active"
+                        id="mainskill"
+                        data-toggle="tab"
+                        href="#rn-mainskill"
+                        role="tab"
+                        aria-controls="mainskill"
+                        aria-selected="true"
+                        >Team</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        id="awards"
+                        data-toggle="tab"
+                        href="#rn-awards"
+                        role="tab"
+                        aria-controls="awards"
+                        aria-selected="false"
+                        >TECH Used</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        id="experience"
+                        data-toggle="tab"
+                        href="#rn-experience"
+                        role="tab"
+                        aria-controls="experience"
+                        aria-selected="false"
+                        >Problem Statement</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="rn-mainskill"
+                      role="tabpanel"
+                      aria-labelledby="mainskill"
+                    >
+                      <div class="single-tab-content">
+                        <ul>
+                          <li>
+                            <a class="anchor" href=""
+                              >Mritunjay Sharma - Machine Learning Expert <br />
+                              Saksham Raghuvanshi - Frontend developer <br />
+                              Devansh Chaudhary - Designer <br />
+                              Sharad Malhotra - Backend Developer <br />
+                              Kratika Tiwari - Graphic Designer <br />
+                              Prajwal Shirur - Frontend developer</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="rn-awards"
+                      role="tabpanel"
+                      aria-labelledby="awards"
+                    >
+                      <div class="single-tab-content">
+                        <ul>
+                          <li>
+                            <a class="anchor" href=""
+                              >Frontend - HTML5 , CSS3 , JS , PARTICAL JS ,
+                              JQUERY , SCSS , JS LIBRARY <br />
+                              Backend - Node.js , Php <br />
+                              ML - keres model , python3 <br />
+                              Design - Illustator , Photoshop
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="rn-experience"
+                      role="tabpanel"
+                      aria-labelledby="experience"
+                    >
+                      <div class="single-tab-content">
+                        <ul>
+                          <li>
+                            <a class="anchor" href="">
+                              PS DETAILS
+                              <br />
+                              Ministry/Organization Name - Ministry of Rural
+                              Development <br />
+                              Problem Statement - Making websites meaningful for
+                              differently Abled citizens with open source tools.
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="spacing"></div>
+
+        <div class="cards">
+          <div class="title">Categories of <span>Differently abled</span></div>
+          <div class="subTitle">Disablity</div>
+          <div class="cards-list">
+            <div class="card 1">
+              <div class="card_image">
+                <img src="./images/helen-card.jpg" alt="" />
+              </div>
+              <div class="card_title title-black">
+                <h2>Helen Keller</h2>
+                <p>Visually Impaired</p>
+              </div>
+            </div>
+
+            <div class="card 2">
+              <div class="card_image">
+                <img src="./images/will-card.jpg" />
+              </div>
+              <div class="card_title title-black">
+                <h2>Will.i.am</h2>
+                <p>Hearing Impaired</p>
+              </div>
+            </div>
+
+            <div class="card 3">
+              <div class="card_image">
+                <img src="./images/nick-card.jpg" />
+              </div>
+              <div class="card_title title-black">
+                <h2>Nicholas James Vujicic</h2>
+                <p>Tetra Ammelia</p>
+              </div>
+            </div>
+
+            <div class="card 4">
+              <div class="card_image">
+                <img src="./images/ronald-card.jpg" />
+              </div>
+              <div class="card_title title-black">
+                <h2>Ronald Reagan</h2>
+                <p>Dimentia</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="subTitle2">Showstopper</div>
+
+          <div class="cards-list2">
+            <div class="card 1">
+              <a href="./404.html">
+                <div class="card_image">
+                  <img src="./images/under.jpg" alt="" />
+                </div>
+                <div class="card_title title-black">
+                  <p>Speech videocall</p>
+                </div></a
+              >
+            </div>
+
+            <div class="card 2">
+              <div class="card_image">
+                <img src="./images/under.jpg" />
+              </div>
+              <div class="card_title title-black">
+                <p>Hymnosis</p>
+              </div>
+            </div>
+
+            <div class="card 3">
+              <div class="card_image">
+                <img src="./images/under.jpg" />
+              </div>
+              <div class="card_title title-black">
+                <p>Covid-19</p>
+              </div>
+            </div>
+
+            <div class="card 4">
+              <div class="card_image">
+                <img src="./images/under.jpg" />
+              </div>
+              <div class="card_title title-black">
+                <p>UX Sign Model</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ourProject">
+          <div id="screenshot" class="title">
+            Screenshots of our <span>Project</span>
+          </div>
+
+          <div class="banner">
+            <div class="container">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="../images/mac1.png" alt="Los Angeles" />
+                  </div>
+
+                  <div class="item">
+                    <img src="../images/mac2.JPG" alt="Chicago" />
+                  </div>
+
+                  <div class="item">
+                    <img src="../images/mac3.png" alt="Chicago" />
+                  </div>
+
+                  <div class="item">
+                    <img src="../images/mac4.png" alt="Chicago" />
+                  </div>
+
+                  <div class="item">
+                    <img src="../images/mac5.png" alt="New york" />
+                  </div>
+                </div>
+
+                <a
+                  class="left carousel-control"
+                  href="#myCarousel"
+                  data-slide="prev"
+                >
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a
+                  class="right carousel-control"
+                  href="#myCarousel"
+                  data-slide="next"
+                >
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+            <img src="../images/mackbook.png" alt="" />
+          </div>
+        </div>
+        <div class="quotes">
+          <div class="title">
+            Famous quotes of <span> Special People </span>
+          </div>
+          <ul class="quoteCards">
+            <li class="quoteCard">
+              <h1>Alex Zanardi</h1>
+              <img src="../images/Alex.png" alt="Alex" />
+              <p>
+                You can climd the mountain in front of u because it is there and
+                <br />
+                u know u can do it <br />
+                <br />
+
+                An Italian professional racing driver and paracyclist. He won
+                the CART championship in 1997 and 1998, and took 15 wins in the
+                series. He also raced in Formula One from 1991 to 1994 and again
+                in 1999; his best result was a sixth-place finish in the 1993
+                Brazilian GP. He returned to CART in 2001, but a major crash in
+                the 2001 American Memorial resulted in the amputation of his
+                legs.
+              </p>
+            </li>
+            <li class="quoteCard">
+              <h1>Stephen Hawking</h1>
+              <img src="../images/StephHawk.png" alt="stephen hawking" />
+              <p>
+                Intelligence is the ability to adapt to change
+                <br />
+                <br />
+                was an English theoretical physicist, cosmologist, and author
+                who was director <br />
+                of research at the Centre for Theoretical Cosmology at the
+                University of Cambridge at the time of his death.[18][19][8] He
+                was the Lucasian Professor of Mathematics at the University of
+                Cambridge between 1979 and 2009. Hawking was born in Oxford into
+                a family of doctors in Glasgow, Scotland.
+              </p>
+            </li>
+            <li class="quoteCard">
+              <h1>Helen Keller</h1>
+              <img src="../images/Helen.png" alt="hellen keller" />
+              <p>
+                The best and most beautiful things in the world cannot be seen
+                or even <br />
+                touched - they must be felt with the heart.
+                <br />
+                <br />
+                was an American author, political activist, and lecturer. She
+                was the first deaf-blind person to earn a Bachelor of Arts
+                degree. The story of Keller and her teacher, Anne Sullivan, was
+                made famous by Keller's autobiography, The Story of My Life, and
+                its adaptations for film and stage, The Miracle Worker. Her
+                birthplace in West Tuscumbia, Alabama
+              </p>
+            </li>
+            <li class="quoteCard">
+              <h1>Nick Vujicic</h1>
+              <img src="../images/Nick.png" alt="nick vujic" />
+              <p>
+                If I fail, I try again, and again, and again. If YOU fail, are
+                you going <br />
+                to try again? The human spirit can handle much worse than we
+                realize. <br />
+                It matters HOW you are going to FINISH. Are you going to finish
+                strong?
+                <br />
+                <br />
+                an Australian Christian evangelist and motivational speaker born
+                with tetra-amelia syndrome,[4] a rare disorder (called
+                phocomelia) characterized by the absence of arms and legs
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer">
+          <img class="wave" src="../images/wave.png" alt="wave" />
+          <p>
+            Liked Our project ?
+            <!-- <hr class="hr1" >
+         <hr class="hr2" > 
+         <hr class="hr3" >  -->
+
+            <span>
+              Our project is available on github at
+              https://github.com/altruist-sih
+            </span>
+          </p>
+
+          <div class="arch"></div>
+          <div class="content">
+            <img src="../images/Logo.png" alt="logo" />
+            <i class="fa fa-blind" aria-hidden="true"></i>
+            <i class="fa fa-deaf" aria-hidden="true"></i>
+            <i class="fa fa-wheelchair" aria-hidden="true"></i>
+            <i class="fa fa-medkit" aria-hidden="true"></i>
+            <div class="contentText">
+              <div class="team">
+                <h2>Team Altruist</h2>
+                <h3>
+                  We team altrusit consist of 6 members and we have choosen the
+                  project to help the differtaly abled people under The ministry
+                  of Rural Development
+                </h3>
+              </div>
+              <div class="blind">
+                <h2>Visually Impaired</h2>
+                <h3>
+                  We have worked on the Visually Impaired by using the speech to
+                  text and text to speech technology
+                </h3>
+              </div>
+              <div class="deaf">
+                <h2>Hearing Impaired</h2>
+                <h3>
+                  We have build a sign to text and text to sign language model
+                  and it is operated using sign language only
+                </h3>
+              </div>
+              <div class="tetra">
+                <h2>Tetra-Ammelia</h2>
+                <h3>
+                  This will be working as same as a Visually Impaired section
+                  using speech to text but the UI would be better
+                </h3>
+              </div>
+              <div class="dimm">
+                <h2>Dimmensia</h2>
+                <h3>
+                  In this we have worked on the deficeny of not remmembing the
+                  purpose of the visit so we have used path
+                </h3>
+              </div>
+
+              <div class="contactUs">
+                <h2>Contact us</h2>
+                <i class="fa fa-instagram" aria-hidden="true"> </i>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-github" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <i class="fa fa-snapchat-ghost" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS
+============================================ -->
+
+    <script>
+      $.fn.commentCards = function () {
+        return this.each(function () {
+          var $this = $(this),
+            $cards = $this.find(".quoteCard"),
+            $current = $cards.filter(".quoteCard--current"),
+            $next;
+
+          $cards.on("click", function () {
+            if (!$current.is(this)) {
+              $cards.removeClass(
+                "quoteCard--current quoteCard--out quoteCard--next"
+              );
+              $current.addClass("quoteCard--out");
+              $current = $(this).addClass("quoteCard--current");
+              $next = $current.next();
+              $next = $next.length ? $next : $cards.first();
+              $next.addClass("quoteCard--next");
+            }
+          });
+
+          if (!$current.length) {
+            $current = $cards.last();
+            $cards.first().trigger("click");
+          }
+
+          $this.addClass("quoteCards--active");
+        });
+      };
+
+      $(".quoteCards").commentCards();
+    </script>
+
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+    <!-- Modernizer JS -->
+    <script src="../assets/js/vendor/modernizr.min.js"></script>
+    <!-- jQuery JS -->
+    <script src="../assets/js/vendor/jquery.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../assets/js/vendor/bootstrap.min.js"></script>
+    <script src="../assets/js/vendor/stellar.js"></script>
+    <script src="../assets/js/vendor/particles.js"></script>
+    <script src="../assets/js/vendor/masonry.js"></script>
+    <script src="../assets/js/vendor/stickysidebar.js"></script>
+    <script src="../assets/js/plugins/plugins.min.js"></script>
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
