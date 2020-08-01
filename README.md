@@ -4,12 +4,12 @@
 <h1 align="center">
 	SMART INDIA HACKATHON 2020 - TEAM ALTRUIST
 	<br>
-	<img src="https://video-altruist.herokuapp.com/assets/logo.png" alt="Altruist Logo" width="200">
+	<img src="https://video-altruist.herokuapp.com/assets/logo.png" alt="Altruist Logo" width="250">
 </h1>
 
 ## PS DETAILS
 
-**Ministry/Organization Name** - Ministry of Rural Development 
+**Ministry/Organization Name** - <a href="https://rural.nic.in/">Ministry of Rural Development</a>  
 
 **Problem Statement** - Making websites meaningful for differently Abled citizens with open source tools.
 
