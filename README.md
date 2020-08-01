@@ -3,6 +3,7 @@
 
 <h1 align="center">
 	SMART INDIA HACKATHON 2020 - TEAM ALTRUIST
+	<br>
 	<img src="https://video-altruist.herokuapp.com/assets/logo.png" alt="Altruist Logo" width="200">
 </h1>
 
