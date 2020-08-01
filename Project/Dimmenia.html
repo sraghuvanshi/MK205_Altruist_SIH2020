@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demmentia</title>
+
+    <link rel="stylesheet" href="../Corona.css" />
+    <link rel="stylesheet" href="../app.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script>
+      function PopUp() {
+        document.getElementById("ac-wrapper").style.display = "none";
+      }
+
+      function save() {
+        var input = document.getElementById("input").value;
+        var res = document.getElementById("hi");
+        res.innerHTML += input;
+      }
+    </script>
+
+    <link rel="stylesheet" href="../Corona.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="dementiaPage">
+      <div id="ac-wrapper">
+        <div id="popup">
+          <center>
+            <div class="stylingPop">
+              <h2>Purpose of your Visit ?</h2>
+              <h3>
+                I will remind you. Dont you Worry
+              </h3>
+              <form id="form" onsubmit="return false">
+                <input
+                  class="inputText"
+                  id="input"
+                  type="text"
+                  placeholder="Enter your message"
+                />
+
+                <input
+                  type="submit"
+                  name="submit"
+                  value="Submit"
+                  class="submitBtn"
+                  onClick="PopUp(); save();"
+                />
+              </form>
+            </div>
+          </center>
+        </div>
+      </div>
+
+      <div class="nav">
+        <a href="./landingPage.html">
+          <img src="../images/Logo.png" alt="logo" class="logo" />
+        </a>
+        <h2>Our Project</h2>
+        <i class="fa fa-search"></i>
+      </div>
+
+      <div class="banner">
+        <h1>Dementia</h1>
+        <img src="../images/dementia.jpg" alt="banner" />
+      </div>
+
+      <div class="deaf-music-card">
+        <h2>
+          Chat with the Bot <br />
+          and get all the answers.
+        </h2>
+        <button>
+          Visit
+        </button>
+      </div>
+
+      <div class="horizontalbar"></div>
+      <div class="bigbar"></div>
+      <div class="bottombar"></div>
+      <div class="rightbar"></div>
+
+      <video class="videoPlay" autoplay loop muted>
+        <source src="../images/Comp 1.mp4" />
+      </video>
+
+      <div class="heading">
+        <h2>
+          Hi there. Ask me what's troubling you ?
+        </h2>
+      </div>
+
+      <div class="title">
+        <h2>
+          AI Integrated chatbot.
+        </h2>
+      </div>
+
+      <div class="reminder">
+        <div id="executiveModal" class="modal fade">
+          <div class="modal-dialog s-dialog">
+            <div class="modal-content s-content">
+              <div class="modal-body s-body">
+                <i class="fa fa-times" aria-hidden="true"></i>
+
+                <h3>
+                  This was the reminder set by you.
+                  <br />
+                  I hope i was helpfull.
+                </h3>
+
+                <h2 id="hi"></h2>
+                <a class="learn-link">Change it if you want!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dialogflow">
+        <section>
+          <iframe
+            allow="microphone;"
+            src="https://bot.dialogflow.com/1cedada0-9044-4853-94e1-bc95a9eee135"
+          ></iframe>
+        </section>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        setTimeout(function () {}, 5000);
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        setInterval(function () {
+          $("#executiveModal").modal("show");
+        }, 25000);
+
+        setInterval(function () {
+          $("#executiveModal").modal("hide");
+        }, 30000);
+      });
+    </script>
+  </body>
+</html>
