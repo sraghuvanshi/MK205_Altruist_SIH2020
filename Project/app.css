@@ -484,12 +484,16 @@
   margin-top: 200px;
 }
 
+.landingPage .wrapper .cards .cards-list2 .card {
+  height: 250px;
+}
+
 .landingPage .wrapper .cards .cards-list2 .card .card_title p {
-  margin-top: 0;
+  margin-top: 80px;
 }
 
 .landingPage .wrapper .cards .cards-list2 .card .card_image img {
-  height: 300px;
+  height: 250px;
 }
 
 .landingPage .wrapper .cards .card {
@@ -517,10 +521,11 @@
 .landingPage .wrapper .cards .card .card_image img {
   width: inherit;
   height: inherit;
-  border-radius: 40px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 450px;
+  height: 420px;
 }
 
 .landingPage .wrapper .cards .card .card_title {
@@ -533,8 +538,18 @@
   height: 40px;
 }
 
+.landingPage .wrapper .cards .card .card_title h2 {
+  font-family: pnBold;
+  font-size: 20px;
+  margin-top: 165px;
+}
+
 .landingPage .wrapper .cards .card .card_title p {
-  margin-top: 190px;
+  background-color: #0c0c0c;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
 }
 
 .landingPage .wrapper .cards .card:hover {
@@ -549,7 +564,7 @@
 }
 
 .landingPage .wrapper .cards .title-black {
-  color: #fff;
+  color: #4093f8;
 }
 
 @media all and (max-width: 500px) {
@@ -618,6 +633,11 @@
 .landingPage .wrapper .ourProject .banner .container .carousel .carousel-inner .item img {
   height: 68vh;
   width: 56vw;
+}
+
+.landingPage .wrapper .ourProject .banner .container .carousel .glyphicon,
+.landingPage .wrapper .ourProject .banner .container .carousel .glyphicon-chevron-right {
+  margin-top: 350px;
 }
 
 .landingPage .wrapper .quotes {
