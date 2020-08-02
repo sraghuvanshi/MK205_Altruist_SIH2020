@@ -215,13 +215,13 @@
         let webcam = null;
 
         (async () => {
-            // Load the model
+            // Load the model using mobilenet
             model = await tf.loadLayersModel( mobilenet );
             model = createTransferModel( model );
             await setupWebcam();
             webcam = await tf.data.webcam( document.getElementById( "webcam" ) );
-            // Setup prediction every 100 ms
-            setInterval( predictImage, 100 );
+            // Setup prediction every 200 ms
+            setInterval( predictImage, 200 );
         })();
         </script>
     </body>
