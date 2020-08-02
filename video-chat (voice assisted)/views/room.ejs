@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Altruist-Video Call app</title>
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <script>
+      const ROOM_ID = "<%= roomId %>";
+      console.log(ROOM_ID);
+    </script>
+    <script
+      defer
+      src="https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js"
+    ></script>
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="/tts.js" defer></script>
+    <script src="https://use.fontawesome.com/737dd78ed4.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #26282b;
+        margin: 0px;
+      }
+      #video-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 50%);
+        grid-auto-rows: 50vh;
+        background-color: #393b3c;
+        /* margin-top: 50px; */
+        border: 2px solid #393b3c;
+      }
+
+      video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+          -8px -8px 12px 0 rgba(112, 112, 112, 0.3);
+      }
+      @media only screen and (max-width: 600px) {
+        #video-grid {
+          grid-template-columns: repeat(auto-fill, 100%);
+          grid-auto-rows: 300px;
+        }
+        .side-nav.desktop {
+          display: none;
+        }
+      }
+
+      /* Side Nav Bar */
+      .side-nav.desktop {
+        position: absolute;
+        width: 5vw;
+        height: 100vh;
+        z-index: 100;
+        background: #414141; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          45,
+          #414141,
+          #202020
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          45,
+          #ffcc33,
+          #ffb347
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+
+      .side-nav.desktop .page-item {
+        color: #ffffff;
+        padding: 18px;
+        font-size: 1.5em;
+        text-align: center;
+      }
+      .side-nav.desktop .page-item:hover {
+        background: rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+      }
+
+      .side-nav.desktop .page-item.active {
+        border-left: 4px solid blueviolet;
+        background: rgba(0, 0, 0, 0.2);
+      }
+
+      /* .side-nav.desktop .page-items-container {
+        height: calc(100vh - 120px);
+      } */
+
+      .heading {
+        /* border: 1px solid red; */
+        color: whitesmoke;
+        display: flex;
+        background-color: #26282b;
+        justify-content: center;
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: 400;
+        text-align: center;
+        padding: 5px;
+        flex-direction: column;
+      }
+      .heading p {
+        margin: -10px 0px 10px 0px;
+      }
+      .heading h3 {
+        margin: 0px 0px 10px 0px;
+      }
+      .team {
+        color: blueviolet;
+      }
+
+      .voiceinator {
+        opacity: 0;
+      }
+
+      .search {
+        font-family: "Montserrat", sans-serif;
+        width: 30vw;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        right: 0;
+        top: 10;
+        margin-top: 30px;
+      }
+
+      .searchTerm {
+        width: 20vw;
+        /* border: 3px solid rgba(114, 114, 114, 1); */
+        border: 3px solid blueviolet;
+        padding: 5px;
+        height: 30px;
+        border-radius: 5px;
+        outline: none;
+        color: #4b4b4b;
+        font-size: 1em;
+        text-align: center;
+        position: fixed;
+      }
+
+      .searchTerm:focus {
+        color: rgba(114, 114, 114, 1);
+      }
+
+      .searchButton {
+        width: 60px;
+        height: 56px;
+        border: 1px solid rgba(114, 114, 114, 1);
+        background: rgba(114, 114, 114, 1);
+        text-align: center;
+        color: #fff;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        font-size: 20px;
+        opacity: 0;
+      }
+
+      /*Resize the wrap to see the search bar change!*/
+      /* .wrap {
+        width: 30vw;
+        .logo-wrap {
+          // border: 1px solid green;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin-top: -15px;
+        }
+        .logo {
+          height: 100px;
+        }
+      } */
+
+      .logo-wrap {
+        position: absolute;
+        margin-left: 20px;
+      }
+      .logo {
+        height: 100px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .search,
+        .logo-wrap {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- intro audio  -->
+    <audio id="intro-audio">
+      <source src="/assets/intro.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- speech to text  -->
+    <div class="search">
+      <input type="text" class="searchTerm" placeholder="Voice input" />
+      <a class="searchButton" href=""> <i class="fa fa-search"></i></a>
+    </div>
+
+    <div class="logo-wrap">
+      <img class="logo" src="/assets/logo.png" alt="" />
+    </div>
+
+    <!-- HEADING -->
+    <div class="heading">
+      <h2>
+        <span class="team">WELCOME TO VOICE ASSISTED VIDEO CALL APP</span>
+      </h2>
+      <p>Press ctrl key or space-bar, and speak your friends gmail ID</p>
+    </div>
+    <!-- NAVBAR -->
+    <div class="side-nav desktop">
+      <div class="page-item">
+        <i class="fa fa-user" aria-hidden="true"></i>
+      </div>
+      <div class="page-item active">
+        <i class="fa fa-video-camera" aria-hidden="true"></i>
+      </div>
+      <div class="page-item">
+        <i class="fa fa-volume-up" aria-hidden="true"></i>
+      </div>
+      <div class="page-item">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </div>
+
+      <div class="page-item">
+        <i class="fa fa-sign-out" aria-hidden="true"></i>
+      </div>
+
+      <div class="page-item">
+        <i class="fa fa-link" aria-hidden="true"></i>
+      </div>
+    </div>
+
+    <div id="video-grid"></div>
+
+    <div class="voiceinator">
+      <select name="voice" id="voices">
+        <option value="">Select a voice</option>
+      </select>
+      <button id="stop">Stop!</button>
+      <button id="speak">Speak</button>
+    </div>
+
+    <script>
+      window.onload = function () {
+        setTimeout(function () {
+          var said = localStorage.getItem("said");
+          if (!said) {
+            document.getElementById("intro-audio").play();
+            said = true;
+            localStorage.setItem("said", "true");
+          } else {
+            localStorage.removeItem("said");
+          }
+        }, 7000);
+      };
+    </script>
+  </body>
+</html>
