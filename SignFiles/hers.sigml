@@ -1,0 +1,18 @@
+<sigml>
+<hns_sign gloss="hers">
+	<hamnosys_nonmanual>
+	</hamnosys_nonmanual>
+	<hamnosys_manual>
+		<hamfist/>
+		<hamextfingeru/>
+		<hampalmd/>
+		<hamshouldertop/>
+		<hamlrat/>
+		<hamseqbegin/>
+		<hammoveo/>
+		<hammovei/>
+		<hammoveo/>
+		<hamseqend/>
+	</hamnosys_manual>
+</hns_sign>
+</sigml>

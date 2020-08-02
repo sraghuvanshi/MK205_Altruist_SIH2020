@@ -1,0 +1,21 @@
+<sigml>
+<hns_sign gloss="tomorrow">
+	<hamnosys_nonmanual>
+	</hamnosys_nonmanual>
+	<hamnosys_manual>
+		<hamfinger2/>
+		<hamextfingerl/>
+		<hampalmd/>
+		<hammoveu/>
+		<hammovei/>
+		<hamsmallmod/>
+		<hamparbegin/>
+		<hammoveo/>
+		<hamarcu/>
+		<hamreplace/>
+		<hamextfingerl/>
+		<hampalmu/>
+		<hamparend/>
+	</hamnosys_manual>
+</hns_sign>
+</sigml>

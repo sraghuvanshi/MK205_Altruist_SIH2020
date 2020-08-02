@@ -1,0 +1,34 @@
+<sigml>
+<hns_sign gloss="car">
+	<hamnosys_nonmanual>
+	</hamnosys_nonmanual>
+	<hamnosys_manual>
+		<hamsymmpar/>
+		<hamlargemod/>
+		<hamfingerstraightmod/>
+		<hamalternatingmotion/>
+		<hamfist/>
+		<hamextfingero/>
+		<hampalml/>
+		<hamparbegin/>
+		<hamstomach/>
+		<hamlrat/>
+		<hamplus/>
+		<hamlrat/>
+		<hamshoulders/>
+		<hamparend/>
+		<hamseqbegin/>
+		<hammoveu/>
+		<hamlargemod/>
+		<hamarcr/>
+		<hamsmallmod/>
+		<hammoved/>
+		<hamlargemod/>
+		<hamarcr/>
+		<hamsmallmod/>
+		<hamseqend/>
+		<hamrepeatfromstart/>
+		<hamalternatingmotion/>
+	</hamnosys_manual>
+</hns_sign>
+</sigml>

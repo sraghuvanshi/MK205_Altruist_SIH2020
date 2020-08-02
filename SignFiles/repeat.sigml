@@ -1,0 +1,19 @@
+<sigml>
+<hns_sign gloss="repeat">
+	<hamnosys_nonmanual>
+	</hamnosys_nonmanual>
+	<hamnosys_manual>
+		<hampinchopen/>
+		<hammiddlefinger/>
+		<hamringfinger/>
+		<hamfingerhookmod/>
+		<hampinky/>
+		<hamfingerhookmod/>
+		<hamextfingeru/>
+		<hampalmd/>
+		<hammovel/>
+		<hamarcu/>
+		<hamrepeatfromstartseveral/>
+	</hamnosys_manual>
+</hns_sign>
+</sigml>

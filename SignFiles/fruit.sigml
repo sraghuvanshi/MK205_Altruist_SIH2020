@@ -1,0 +1,19 @@
+<sigml>
+<hns_sign gloss="fruit">
+	<hamnosys_nonmanual>
+	</hamnosys_nonmanual>
+	<hamnosys_manual>
+		<hamfinger2345/>
+		<hamthumboutmod/>
+		<hamthumb/>
+		<hamfingernail/>
+		<hamindexfinger/>
+		<hamextfingeru/>
+		<hampalml/>
+		<hamlips/>
+		<hamlrat/>
+		<hamclose/>
+		<hamtwisting/>
+	</hamnosys_manual>
+</hns_sign>
+</sigml>

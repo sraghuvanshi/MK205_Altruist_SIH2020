@@ -1,0 +1,16 @@
+<sigml>
+<hns_sign gloss="news">
+	<hamnosys_nonmanual>
+	</hamnosys_nonmanual>
+	<hamnosys_manual>
+		<hamflathand/>
+		<hamthumbopenmod/>
+		<hamextfingeru/>
+		<hampalmd/>
+		<hamear/>
+		<hamlrat/>
+		<hambehind/>
+		<hamclose/>
+	</hamnosys_manual>
+</hns_sign>
+</sigml>
