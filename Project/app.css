@@ -499,7 +499,7 @@
 }
 
 .landingPage .wrapper .cards .cards-list2 .card .card_title p {
-  margin-top: 80px;
+  margin-top: 30px;
 }
 
 .landingPage .wrapper .cards .cards-list2 .card .card_image img {
@@ -552,7 +552,7 @@
   font-family: pnBold;
   font-size: 20px;
   margin-top: 165px;
-  color: #f89845;
+  color: cyan;
 }
 
 .landingPage .wrapper .cards .card .card_title p {
@@ -588,7 +588,8 @@
   }
 }
 
-.landingPage .wrapper .cards .card {
+.landingPage .wrapper .cards .card a {
+  text-decoration: none;
   margin: 30px auto;
   width: 300px;
   height: 300px;
