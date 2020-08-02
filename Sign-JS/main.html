@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Interpreting Hand Gestures and Sign Language in the Webcam with AI using TensorFlow.js</title>
+        <title>Team-Altruist: Sign Language to Text using TensorFlow.js</title>
         <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-data@2.0.0/dist/tf-data.min.js"></script>
         <style>
@@ -215,13 +215,13 @@
         let webcam = null;
 
         (async () => {
-            // Load the model
+            // Load the model using mobilenet
             model = await tf.loadLayersModel( mobilenet );
             model = createTransferModel( model );
             await setupWebcam();
             webcam = await tf.data.webcam( document.getElementById( "webcam" ) );
-            // Setup prediction every 100 ms
-            setInterval( predictImage, 100 );
+            // Setup prediction every 200 ms
+            setInterval( predictImage, 200 );
         })();
         </script>
     </body>
