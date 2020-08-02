@@ -12,6 +12,7 @@
   font-family: pnReg;
   src: url(./fonts/regular.ttf) format("truetype");
 }
+
 //? Welcome Page
 .welcomePage {
   a {
@@ -480,7 +481,7 @@
           height: 250px;
           .card_title {
             p {
-              margin-top: 80px;
+              margin-top: 30px;
             }
           }
 
@@ -536,7 +537,7 @@
           font-family: pnBold;
           font-size: 20px;
           margin-top: 165px;
-          color: rgb(248, 152, 69);
+          color: cyan;
         }
         p {
           background-color: rgb(12, 12, 12);
@@ -571,18 +572,21 @@
       }
 
       .card {
-        margin: 30px auto;
-        width: 300px;
-        height: 300px;
-        border-radius: 40px;
-        background-image: url("https://i.redd.it/b3esnz5ra34y.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-repeat: no-repeat;
-        box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
-          -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
-        transition: 0.4s;
+        a {
+          text-decoration: none;
+          margin: 30px auto;
+          width: 300px;
+          height: 300px;
+          border-radius: 40px;
+          background-image: url("https://i.redd.it/b3esnz5ra34y.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-repeat: no-repeat;
+          box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
+            -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+          transition: 0.4s;
+        }
       }
     }
 
