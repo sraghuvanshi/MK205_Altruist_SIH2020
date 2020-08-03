@@ -26,12 +26,11 @@
 We will be creating a **Landing page** which will *distribute our audience* and it will lead to *different sections specific to a disability*. We have identified and worked for some of the common disabilities possible in a person **to make their Web experience more accessible, smoother and easier.**
 
 **1. Tetra Amelia :** <a href="https://covid-altruist.herokuapp.com/">View Demo</a>
-- 
+-*Head tracking & Facial expression recognition using webGazer & bodyPix*. 
 - Real *smooth UI/UX* for the people suffering from Tetra Amelia
 - *Speech* to Command facility for the website traversal
 - *Speech synthesis* for more accessible website experience.
 - *Voice-Assisted Video Chat*
-- *Head and Eye Tracking* [WIP}
 
 **2. Visually Impaired :** <a href="https://blind-altruist.herokuapp.com/">View Demo</a>
 - *Speech* to Command for easier website traversal.
