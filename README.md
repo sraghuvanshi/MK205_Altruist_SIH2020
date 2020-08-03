@@ -129,7 +129,7 @@ We will be creating a **Landing page** which will *distribute our audience* and 
 - Twelfth International Multi-Conference on Information Processing-2016 (IMCIP-2016)
 HamNoSys to SiGML Conversion System for Sign Language
 Automation
-Khushdeep Kaur∗ and Parteek Kumar
+Khushdeep Kaur and Parteek Kumar
 
 ## Open Source Tools Used
 - WebGazer
