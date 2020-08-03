@@ -9,7 +9,7 @@
 <h1 align="center">Team Altruist</h1>
 <br>
 </h1>
-<h4 align="center">We empathise to empower - realising the dream of Aatmanirbhar Bharat 🇮🇳</h4>
+<h4 align="center">We empathise to empower - realising the dream of Aatmanirbhar Bharat</h4>
 <p align="center">
 	<a href="https://covid-altruist.herokuapp.com/">
 		<img src="https://img.shields.io/badge/Tetra--Amelia-Face%20Tracking-green">
@@ -65,7 +65,7 @@
 	<img src="readme-assests/Screenshot (186).png" alt="Altruist Logo" width="450" height="250"><br>
 </h1>
 <h1 align="center">
-	<img src="readme-assests/Screenshot (137).png" alt="Altruist Logo" width="450" height="250"><br>
+	<img src="readme-assests/Screenshot (187).png" alt="Altruist Logo" width="450" height="250"><br>
 </h1>
 <h1 align="center">
 	<img src="readme-assests/Screenshot (137).png" alt="Altruist Logo" width="450" height="250"><br>
@@ -121,4 +121,21 @@ We will be creating a **Landing page** which will *distribute our audience* and 
 
 ### **5. Voice Assisted Video Call App** <a href="https://video-altruist.herokuapp.com/">View Demo</a>
 
+## Open Source Tools Used
+
+- Recent Developments in Indian Sign Language Recognition: An Analysis  by Daleesha M Viswanathan , Sumam Mary Idicul ( (IJCSIT) International Journal of Computer Science and Information Technologies, Vol. 6 (1) , 2015, 289-293)
+- A Vision Based Recognition of Indian Sign Language Alphabets and Numerals Using B-Spline Approximation by Geetha M (International Journal on Computer Science and Engineering (IJCSE))
+- Handling Big Datasets for Machine Learning (Blog) by Matthew Stewart, PhD Researcher
+- Indian Sign Language Research and Training Centre (ISLRTC) http://www.islrtc.nic.in/ 
+- Twelfth International Multi-Conference on Information Processing-2016 (IMCIP-2016)
+HamNoSys to SiGML Conversion System for Sign Language
+Automation
+Khushdeep Kaur∗ and Parteek Kumar
+- WebGazer
+- BodyPix
+- PoseNet
+- Handtrack.js 
+- Jeeliz FaceFilter 
+- TensorFlow.js
+- HandsFree.js
 
