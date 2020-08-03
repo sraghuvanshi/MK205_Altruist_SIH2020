@@ -1,0 +1,15 @@
+<sigml>
+<hns_sign gloss="office">
+	<hamnosys_nonmanual>
+	</hamnosys_nonmanual>
+	<hamnosys_manual>
+		<hampinch12/>
+		<hamextfingeru/>
+		<hampalml/>
+		<hamhead/>
+		<hamcirclei/>
+		<hamcirclei/>
+		<hamsmallmod/>
+	</hamnosys_manual>
+</hns_sign>
+</sigml>

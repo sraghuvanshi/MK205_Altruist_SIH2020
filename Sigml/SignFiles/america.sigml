@@ -1,0 +1,34 @@
+<sigml>
+<hns_sign gloss="america">
+	<hamnosys_nonmanual>
+	</hamnosys_nonmanual>
+	<hamnosys_manual>
+		<hamsymmlr/>
+		<hamfingerstraightmod/>
+		<hamalternatingmotion/>
+		<hamfinger2345/>
+		<hamthumboutmod/>
+		<hamextfingerul/>
+		<hampalmdl/>
+		<hamparbegin/>
+		<hamfingertip/>
+		<hamindexfinger/>
+		<hammiddlefinger/>
+		<hamringfinger/>
+		<hampinky/>
+		<hamplus/>
+		<hamfingertip/>
+		<hamindexfinger/>
+		<hammiddlefinger/>
+		<hamringfinger/>
+		<hampinky/>
+		<hamparend/>
+		<haminterlock/>
+		<hamshoulders/>
+		<hamcircleu/>
+		<hamellipseh/>
+		<haminterlock/>
+		<hamalternatingmotion/>
+	</hamnosys_manual>
+</hns_sign>
+</sigml>

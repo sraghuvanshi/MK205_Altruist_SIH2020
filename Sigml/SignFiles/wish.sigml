@@ -1,0 +1,16 @@
+<sigml>
+<hns_sign gloss="wish">
+	<hamnosys_nonmanual>
+	</hamnosys_nonmanual>
+	<hamnosys_manual>
+		<hamflathand/>
+		<hamextfingero/>
+		<hampalml/>
+		<hamseqbegin/>
+		<hammoveu/>
+		<hammoved/>
+		<hamseqend/>
+		<hamrepeatfromstart/>
+	</hamnosys_manual>
+</hns_sign>
+</sigml>

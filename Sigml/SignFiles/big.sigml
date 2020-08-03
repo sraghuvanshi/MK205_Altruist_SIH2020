@@ -1,0 +1,21 @@
+<sigml>
+<hns_sign gloss="big">
+	<hamnosys_nonmanual>
+	</hamnosys_nonmanual>
+	<hamnosys_manual>
+		<hamsymmlr/>
+		<hamflathand/>
+		<hamextfingeru/>
+		<hampalml/>
+		<hamstomach/>
+		<hamlrat/>
+		<hamclose/>
+		<hamparbegin/>
+		<hammoveu/>
+		<hamlargemod/>
+		<hamarcr/>
+		<hammoveur/>
+		<hamparend/>
+	</hamnosys_manual>
+</hns_sign>
+</sigml>

@@ -1,0 +1,24 @@
+<sigml>
+<hns_sign gloss="tree">
+	<hamnosys_nonmanual>
+	</hamnosys_nonmanual>
+	<hamnosys_manual>
+		<hamsymmlr/>
+		<hamcee12/>
+		<hamextfingerol/>
+		<hampalml/>
+		<hamchest/>
+		<hamseqbegin/>
+		<hammoveu/>
+		<hamseqend/>
+		<hamreplace/>
+		<hamextfingerol/>
+		<hampalml/>
+		<hamseqbegin/>
+		<hammoveu/>
+		<hamarcr/>
+		<hamforehead/>
+		<hamseqend/>
+	</hamnosys_manual>
+</hns_sign>
+</sigml>

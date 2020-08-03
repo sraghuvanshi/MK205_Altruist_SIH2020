@@ -1,0 +1,14 @@
+<sigml>
+<hns_sign gloss="word">
+	<hamnosys_nonmanual>
+	</hamnosys_nonmanual>
+	<hamnosys_manual>
+		<hamcee12/>
+		<hamextfingerr/>
+		<hampalmu/>
+		<hamnose/>
+		<hamlrat/>
+		<hamclose/>
+	</hamnosys_manual>
+</hns_sign>
+</sigml>

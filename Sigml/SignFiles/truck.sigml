@@ -1,0 +1,44 @@
+<sigml>
+<hns_sign gloss="truck">
+	<hamnosys_nonmanual>
+	</hamnosys_nonmanual>
+	<hamnosys_manual>
+		<hamsymmpar/>
+		<hamlargemod/>
+		<hamfingerstraightmod/>
+		<hamalternatingmotion/>
+		<hamparbegin/>
+		<hamfinger2/>
+		<hamplus/>
+		<hamflathand/>
+		<hamparend/>
+		<hamparbegin/>
+		<hamextfingerul/>
+		<hampalml/>
+		<hamplus/>
+		<hamextfingero/>
+		<hampalmur/>
+		<hamparend/>
+		<hamparbegin/>
+		<hampalm/>
+		<hamplus/>
+		<hamindexfinger/>
+		<hamfingertip/>
+		<hamparend/>
+		<hamtouch/>
+		<hamshoulders/>
+		<hamclose/>
+		<hamnomotion/>
+		<hamreplace/>
+		<hamfist/>
+		<hamthumbacrossmod/>
+		<hamextfingero/>
+		<hampalmu/>
+		<hamseqbegin/>
+		<hammoveu/>
+		<hammoved/>
+		<hamseqend/>
+		<hamrepeatfromstart/>
+	</hamnosys_manual>
+</hns_sign>
+</sigml>
