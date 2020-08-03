@@ -53,27 +53,28 @@
 - Features to be introduced in website that *empathise and synchronize* with the rural audience and how they can enjoy the benefits with even minimal Digital Literacy.
 
 ## Implemented on local Rural.nic.in <a href="http://rural-altruist.surge.sh/"> View Demo</a>
-<!-- <h1 align="center">
-	<img src="" alt="Altruist Logo" width="250"><br>
+
+<h1 align="center">
+	<img src="readme-assests/Screenshot (140).png" alt="Altruist Logo" width="450"  height="250"><br>
 </h1>
 <h1 align="center">
-	<img src="" alt="Altruist Logo" width="250"><br>
+	<img src="readme-assests/Screenshot (141).png" alt="Altruist Logo" width="450" height="250"><br>
 </h1>
 <h1 align="center">
-	<img src="" alt="Altruist Logo" width="250"><br>
+	<img src="readme-assests/Screenshot (137).png" alt="Altruist Logo" width="450" height="250"><br>
 </h1>
 <h1 align="center">
-	<img src="" alt="Altruist Logo" width="250"><br>
+	<img src="readme-assests/Screenshot (136).png" alt="Altruist Logo" width="450" height="250"><br>
 </h1>
 <h1 align="center">
-	<img src="" alt="Altruist Logo" width="250"><br>
+	<img src="readme-assests/Screenshot (132).png" alt="Altruist Logo" width="450" height="250"><br>
 </h1>
 <h1 align="center">
-	<img src="" alt="Altruist Logo" width="250"><br>
+	<img src="readme-assests/Screenshot (133).png" alt="Altruist Logo" width="450" height="250"><br>
 </h1>
 <h1 align="center">
-	<img src="" alt="Altruist Logo" width="250"><br>
-</h1> -->
+	<img src="readme-assests/Screenshot (139).png" alt="Altruist Logo" width="450" height="250"><br>
+</h1>
 
 
 ## SOLUTION
