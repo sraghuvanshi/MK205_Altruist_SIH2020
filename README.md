@@ -38,14 +38,14 @@
 	<a href="#">Voice Assistant Video Call</a> 
 </p>
 
-## PROBLEM STATEMENT
+## Problem Statement
 
 **Ministry/Organization Name** - <a href="https://rural.nic.in/">Ministry of Rural Development</a>  
 
 **Problem Statement** - Making websites meaningful for differently Abled citizens with open source tools.
 
 
-## UNDERSTANDING THE PROBLEM STATEMENT
+## Understanding The Problem Statement
 
 - Ministry of Rural Development is currently running several schemes and programs primarily focusing on the *development of rural poor*. It is important to note that as *per census 2011 (2016 updated) – In India out of the 121 Cr population, 2.68 Cr persons are disabled and  (69%) of the disabled population resided in rural areas (1.86 Cr). One more key concern is that around 51% of the total disabled population in rural areas is not literate.* 
 
@@ -89,7 +89,7 @@
 
 
 
-## SOLUTION
+## Solution
 
 We will be creating a **Landing page** which will *distribute our audience* and it will lead to *different sections specific to a disability*. We have identified and worked for some of the common disabilities possible in a person **to make their Web experience more accessible, smoother and easier.**
 
@@ -121,8 +121,7 @@ We will be creating a **Landing page** which will *distribute our audience* and 
 
 ### **5. Voice Assisted Video Call App** <a href="https://video-altruist.herokuapp.com/">View Demo</a>
 
-## Open Source Tools Used
-
+## Refrences 
 - Recent Developments in Indian Sign Language Recognition: An Analysis  by Daleesha M Viswanathan , Sumam Mary Idicul ( (IJCSIT) International Journal of Computer Science and Information Technologies, Vol. 6 (1) , 2015, 289-293)
 - A Vision Based Recognition of Indian Sign Language Alphabets and Numerals Using B-Spline Approximation by Geetha M (International Journal on Computer Science and Engineering (IJCSE))
 - Handling Big Datasets for Machine Learning (Blog) by Matthew Stewart, PhD Researcher
@@ -131,6 +130,8 @@ We will be creating a **Landing page** which will *distribute our audience* and 
 HamNoSys to SiGML Conversion System for Sign Language
 Automation
 Khushdeep Kaur∗ and Parteek Kumar
+
+## Open Source Tools Used
 - WebGazer
 - BodyPix
 - PoseNet
@@ -138,4 +139,6 @@ Khushdeep Kaur∗ and Parteek Kumar
 - Jeeliz FaceFilter 
 - TensorFlow.js
 - HandsFree.js
+- Peerjs
 
+<h3 align="center">Made With :heart:, by Team Altruist</h3>
