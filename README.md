@@ -30,7 +30,7 @@
 </p>
 
 <p align="center">
-	<a href="#Tetra-Amelia">Tetra amelia</a> •
+	<a href="#1.-Tetra-Amelia">Tetra amelia</a> •
 	<a href="#Data-structure">Visually Impaired</a> •
 	<a href="#How-to-launch">Speech/Hearing Impaired</a> •
 	<a href="#How-to-rerun">Dementia</a> •
