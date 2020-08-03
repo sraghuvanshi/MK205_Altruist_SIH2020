@@ -27,14 +27,15 @@
 	<a href="https://video-altruist.herokuapp.com/">
 		<img src="https://img.shields.io/badge/Voice%20Assisted-Video%20Chat-orange">
 	</a>
+
 </p>
 
 <p align="center">
-	<a href="#1.-Tetra-Amelia">Tetra amelia</a> •
-	<a href="#Data-structure">Visually Impaired</a> •
-	<a href="#How-to-launch">Speech/Hearing Impaired</a> •
-	<a href="#How-to-rerun">Dementia</a> •
-	<a href="#Environment">Voice Assistant Video Call</a> 
+	<a href="#">Tetra amelia</a> •
+	<a href="#">Visually Impaired</a> •
+	<a href="#">Speech/Hearing Impaired</a> •
+	<a href="#">Dementia</a> •
+	<a href="#">Voice Assistant Video Call</a> 
 </p>
 
 ## PROBLEM STATEMENT
@@ -61,6 +62,12 @@
 	<img src="readme-assests/Screenshot (141).png" alt="Altruist Logo" width="450" height="250"><br>
 </h1>
 <h1 align="center">
+	<img src="readme-assests/Screenshot (186).png" alt="Altruist Logo" width="450" height="250"><br>
+</h1>
+<h1 align="center">
+	<img src="readme-assests/Screenshot (137).png" alt="Altruist Logo" width="450" height="250"><br>
+</h1>
+<h1 align="center">
 	<img src="readme-assests/Screenshot (137).png" alt="Altruist Logo" width="450" height="250"><br>
 </h1>
 <h1 align="center">
@@ -75,6 +82,11 @@
 <h1 align="center">
 	<img src="readme-assests/Screenshot (139).png" alt="Altruist Logo" width="450" height="250"><br>
 </h1>
+<h1 align="center">
+	<img src="readme-assests/Screenshot (130).png" alt="Altruist Logo" width="450" height="250"><br>
+</h1>
+
+
 
 
 ## SOLUTION
