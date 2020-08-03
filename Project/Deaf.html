@@ -1,0 +1,1186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link rel="stylesheet" href="../app.css" />
+
+    <link
+      rel="stylesheet"
+      href="/Altruist-SIH-saksham/Altruist-SIH-saksham/Projects for landing page/Deneb/assets/css/bootstrap.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,700"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="/Altruist-SIH-saksham/Altruist-SIH-saksham/Projects for landing page/Deneb/assets/css/slick-theme.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="/Altruist-SIH-saksham/Altruist-SIH-saksham/Projects for landing page/Deneb/assets/css/slick.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="/Altruist-SIH-saksham/Altruist-SIH-saksham/Projects for landing page/Deneb/assets/css/style.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- <link rel="stylesheet" href="../assets/css/vendor/fontawesome.css" /> -->
+
+    <link rel="stylesheet" href="../node_modules/hover.css/css/hover.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deaf Section</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-data@2.0.0/dist/tf-data.min.js"></script>
+  </head>
+  <body>
+    <div class="deafPage">
+      <div id="sc" class="signToText">
+        <div class="head">
+          Sign to Text converter
+        </div>
+        <div class="wrapperSign">
+          <video
+            autoplay
+            playsinline
+            muted
+            id="webcam"
+            width="224"
+            height="224"
+          ></video>
+
+          <h1 id="status">Loading...</h1>
+
+          <div class="btn" id="buttons">
+            <button class="none hvr-pop" onclick="captureSample(0)">
+              Calibrate
+            </button>
+            <button onclick="captureSample(1)">✊ (Rock)</button>
+            <button onclick="captureSample(2)">🖐 (Paper)</button>
+            <button onclick="captureSample(3)">✌️ (Scissors)</button>
+            <button onclick="captureSample(4)">👌 (Letter D)</button>
+            <button onclick="captureSample(5)">👍 (Thumb Up)</button>
+            <button onclick="captureSample(6)">🖖 (Vulcan)</button>
+            <button onclick="captureSample(7)">🤟 (ILY - I Love You)</button>
+            <button onclick="captureSample(8)">Sign-A (A)</button>
+            <button onclick="captureSample(9)">Sign-B (B)</button>
+            <button onclick="captureSample(10)">Sign-C (C)</button>
+            <button onclick="captureSample(11)">Sign-E (E)</button>
+            <button onclick="captureSample(12)">Sign-F (F)</button>
+            <button onclick="captureSample(13)">Sign-G (G)</button>
+            <button onclick="captureSample(14)">Sign-H (H)</button>
+            <button onclick="captureSample(15)">Sign-I (I)</button>
+            <button onclick="captureSample(16)">Sign-J (J)</button>
+            <button onclick="captureSample(17)">Sign-K (K)</button>
+            <button onclick="captureSample(18)">Sign-L (L)</button>
+            <button onclick="captureSample(19)">Sign-M (M)</button>
+            <button onclick="captureSample(20)">Sign-N (N)</button>
+            <button onclick="captureSample(21)">Sign-O (O)</button>
+            <button onclick="captureSample(22)">Sign-P (P)</button>
+            <button onclick="captureSample(24)">Sign-Q (Q)</button>
+            <button onclick="captureSample(25)">Sign-R (R)</button>
+            <button onclick="captureSample(26)">Sign-S (S)</button>
+            <button onclick="captureSample(27)">Sign-T (T)</button>
+            <button onclick="captureSample(28)">Sign-U (U)</button>
+            <button onclick="captureSample(29)">Sign-V (V)</button>
+            <button onclick="captureSample(30)">Sign-W (W)</button>
+            <button onclick="captureSample(31)">Sign-X (X)</button>
+            <button onclick="captureSample(32)">Sign-Y (Y)</button>
+            <button onclick="captureSample(33)">Sign-Z (Z)</button>
+            <button class="train" onclick="trainModel()">Train</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav">
+        <img src="../images/Logo.png" alt="logo" class="logo" />
+
+        <a class="anchor" href="./landingPage.html">Home</a>
+        <a class="anchor" href="">About Us</a>
+        <a class="anchor" href="https://blind-altruist.herokuapp.com/">Blind</a>
+        <a class="anchor" href="./Deaf.html">Deaf</a>
+        <a class="anchor" href="./Deaf.html">Dumb</a>
+        <a class="anchor" href="./Dimmenia.html">Dimentia</a>
+
+        <h2><a href="https://sign01.herokuapp.com/"> Our project </a></h2>
+
+        <i class="fa fa-search"></i>
+      </div>
+
+      <div class="videocall">
+        <a href="https://video-altruist.herokuapp.com/">
+          <i class="fa fa-video-camera" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <div class="deafvideo">
+        <div class="videoplayer">
+          <video class="videoTag" autoplay loop muted>
+            <source src="../images/Video2.webm" />
+          </video>
+        </div>
+      </div>
+
+      <div class="banner">
+        <h1>Deaf <span>&</span> Dumb</h1>
+        <img src="../images/deafBanner.jpg" alt="banner" />
+      </div>
+
+      <div class="deaf-music-card">
+        <h2>
+          Sign language <br />
+          is the key.
+        </h2>
+        <button>
+          Visit
+        </button>
+      </div>
+
+      <div class="govtScheme">
+        <section class="deneb_project project_v2 section_padding" id="project">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="section_title text-center">
+                  <h2>Govt. Schemes</h2>
+                  <p>
+                    The schemes and the policy that are currently running are as
+                    shown below to filter your catagory please filter above
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="project_button_2 text-center">
+                  <button class="project_btn active_btn" data-filter="*">
+                    all
+                  </button>
+                  <button class="project_btn" data-filter=".cat1">
+                    rural
+                  </button>
+                  <button class="project_btn" data-filter=".cat2">
+                    Urban
+                  </button>
+                  <button class="project_btn" data-filter=".cat3">
+                    Ongoing
+                  </button>
+                  <button class="project_btn" data-filter=".cat4">
+                    coming up
+                  </button>
+                  <button class="project_btn" data-filter=".cat5">
+                    extinct
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="row grid_wrapper">
+              <div class="col-lg-4 col-md-6 col-sm-12 single_project cat1">
+                <div class="grid_item">
+                  <div class="deneb_img">
+                    <img
+                      src="../images/dumb1.jpg"
+                      class="img-fluid"
+                      alt="Design & Develop"
+                    />
+                  </div>
+                  <div class="deneb_info">
+                    <h4><a href="#">Design & Develop</a></h4>
+                    <p>Design</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 single_project cat2">
+                <div class="grid_item">
+                  <div class="deneb_img">
+                    <img
+                      src="../images/dumb2.jpg"
+                      class="img-fluid"
+                      alt="Product Display"
+                    />
+                  </div>
+                  <div class="deneb_info">
+                    <h4><a href="#">Product Display</a></h4>
+                    <p>Design</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 single_project cat3">
+                <div class="grid_item">
+                  <div class="deneb_img">
+                    <img
+                      src="../images/dumb3.jpg"
+                      class="img-fluid"
+                      alt="Design & Develop"
+                    />
+                  </div>
+                  <div class="deneb_info">
+                    <h4><a href="#">Design & Develop</a></h4>
+                    <p>Design</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 single_project cat4">
+                <div class="grid_item">
+                  <div class="deneb_img">
+                    <img
+                      src="../images/dumb4.jpg"
+                      class="img-fluid"
+                      alt="Design & Develop"
+                    />
+                  </div>
+                  <div class="deneb_info">
+                    <h4><a href="#">Design & Develop</a></h4>
+                    <p>Design</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 single_project cat5">
+                <div class="grid_item">
+                  <div class="deneb_img">
+                    <img
+                      src="../images/dumb5.jpg"
+                      class="img-fluid"
+                      alt="Design & Develop"
+                    />
+                  </div>
+                  <div class="deneb_info">
+                    <h4><a href="#">Design & Develop</a></h4>
+                    <p>Design</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 single_project cat1">
+                <div class="grid_item">
+                  <div class="deneb_img">
+                    <img
+                      src="../images/dumb6.jpg"
+                      class="img-fluid"
+                      alt="Design & Develop"
+                    />
+                  </div>
+                  <div class="deneb_info">
+                    <h4><a href="#">Design & Develop</a></h4>
+                    <p>Design</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 single_project cat4">
+                <div class="grid_item">
+                  <div class="deneb_img">
+                    <img
+                      src="../images/dumb7.jpg"
+                      class="img-fluid"
+                      alt="Design & Develop"
+                    />
+                  </div>
+                  <div class="deneb_info">
+                    <h4><a href="#">Design & Develop</a></h4>
+                    <p>Design</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 single_project cat2">
+                <div class="grid_item">
+                  <div class="deneb_img">
+                    <img
+                      src="../images/dumb8.jpg"
+                      class="img-fluid"
+                      alt="Design & Develop"
+                    />
+                  </div>
+                  <div class="deneb_info">
+                    <h4><a href="#">Design & Develop</a></h4>
+                    <p>Design</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 single_project cat3">
+                <div class="grid_item">
+                  <div class="deneb_img">
+                    <img
+                      src="../images/dumb9.jpg"
+                      class="img-fluid"
+                      alt="Design & Develop"
+                    />
+                  </div>
+                  <div class="deneb_info">
+                    <h4><a href="#">Design & Develop</a></h4>
+                    <p>Design</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="nav_button">
+        <div class="infoBtn1">
+          <div id="container">
+            <button class="learn-more">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Information</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="infoBtn2">
+          <div id="container">
+            <button class="learn-more">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Technical</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="infoBtn3">
+          <div id="container">
+            <button class="learn-more">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Social Media</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="infoBtn4">
+          <div id="container">
+            <button class="learn-more">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Tools</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="intresting">
+        <h1>All Shortcuts that u need</h1>
+        <h5>Redirect Urself to your favoutite platform</h5>
+        <div class="periodic-table">
+          <div class="empty-spacer-1"></div>
+          <div class="empty-spacer-2"></div>
+          <div class="periodic-element social-media">
+            <div class="periodic-element-inner">
+              <div class="title">
+                <img src="../images/news.png" alt=" " />
+              </div>
+              <div class="description">News</div>
+            </div>
+          </div>
+          <div class="periodic-element social-media">
+            <div class="periodic-element-inner">
+              <div class="title">
+                <img src="../images/radio.png" alt=" " />
+              </div>
+              <div class="description">Radio</div>
+            </div>
+          </div>
+          <div class="periodic-element just-trying">
+            <div class="periodic-element-inner">
+              <div class="title">
+                <img src="../images/internet.webp" alt=" " />
+              </div>
+              <div class="description">Internet</div>
+            </div>
+          </div>
+          <div class="periodic-element intense-work">
+            <div class="periodic-element-inner">
+              <div class="title">
+                <img src="../images/reuters.png" alt=" " />
+              </div>
+              <div class="description">Reuters</div>
+            </div>
+          </div>
+          <div class="periodic-element intense-work">
+            <div class="periodic-element-inner">
+              <div class="title">
+                <img src="../images/slack.png" alt=" " />
+              </div>
+              <div class="description">Slack</div>
+            </div>
+          </div>
+          <div class="periodic-element fun-stuff">
+            <div class="periodic-element-inner">
+              <div class="title">
+                <img src="../images/npm.png" alt=" " />
+              </div>
+              <div class="description">NPM</div>
+            </div>
+          </div>
+          <div class="periodic-element fun-stuff">
+            <div class="periodic-element-inner">
+              <div class="title">
+                <img src="../images/behance.png" alt=" " />
+              </div>
+              <div class="description">Behance</div>
+            </div>
+          </div>
+          <a
+            class="periodic-element social-media"
+            href="https://twitter.com/mritunjay394/status/1285950680633470976?s=21"
+            target="_blank"
+          >
+            <div class="periodic-element-inner">
+              <div class="title">
+                <img src="../images/gitlab.webp" alt=" " />
+              </div>
+              <div class="description">Gitlab</div>
+            </div></a
+          >
+          <div class="periodic-element social-media">
+            <div class="periodic-element-inner">
+              <div class="title">
+                <img src="../images/podcast.png" alt=" " />
+              </div>
+              <div class="description">Podcast</div>
+            </div>
+          </div>
+          <div class="periodic-element intense-work">
+            <div class="periodic-element-inner">
+              <div class="title">
+                <img src="../images/github.png" alt=" " />
+              </div>
+              <div class="description">GitHub</div>
+            </div>
+          </div>
+          <div class="periodic-element intense-work">
+            <div class="periodic-element-inner">
+              <div class="title">
+                <img src="../images/yarn.jpg" alt=" " />
+              </div>
+              <div class="description">Yarn</div>
+            </div>
+          </div>
+          <div class="periodic-element just-trying">
+            <div class="periodic-element-inner">
+              <div class="title">
+                <img src="../images/illu.png" alt=" " />
+              </div>
+              <div class="description">Illustrater</div>
+            </div>
+          </div>
+          <a
+            class="periodic-element just-trying"
+            href="https://tellystats.com"
+            target="_blank"
+          >
+            <div class="periodic-element-inner">
+              <div class="title">
+                <img src="../images/react.webp" alt=" " />
+              </div>
+              <div class="description">React</div>
+            </div></a
+          >
+          <div class="periodic-element just-trying">
+            <div class="periodic-element-inner">
+              <div class="title">
+                <img src="../images/wunder.jpg" alt=" " />
+              </div>
+              <div class="description">Wunderlist</div>
+            </div>
+          </div>
+          <div class="periodic-element fun-stuff">
+            <div class="periodic-element-inner">
+              <div class="title">
+                <img src="../images/insta.png" alt=" " />
+              </div>
+              <div class="description">Instagram</div>
+            </div>
+          </div>
+          <div class="periodic-element fun-stuff">
+            <div class="periodic-element-inner">
+              <div class="title">
+                <img src="../images/fb.png" alt=" " />
+              </div>
+              <div class="description">Facebook</div>
+            </div>
+          </div>
+          <a
+            class="periodic-element fun-stuff"
+            href="https://twitter.com/mritunjay394/status/1285950680633470976?s=21"
+            target="_blank"
+          >
+            <div class="periodic-element-inner">
+              <div class="title">
+                <img src="../images/twitter.webp" alt=" " />
+              </div>
+              <div class="description">Twitter</div>
+            </div></a
+          >
+          <div class="periodic-element just-trying">
+            <div class="periodic-element-inner">
+              <div class="title">
+                <img src="../images/google.png" alt=" " />
+              </div>
+              <div class="description">Google</div>
+            </div>
+          </div>
+          <a
+            class="periodic-element just-trying"
+            href="https://docs.google.com/spreadsheets/d/1Dim2nKRjgpkjA4miqTzcLPT68L0B5LU2aWZWF5hHYAc/edit#gid=0"
+            target="_blank"
+          >
+            <div class="periodic-element-inner">
+              <div class="title">
+                <img src="../images/excel.png" alt=" " />
+              </div>
+              <div class="description">Excel</div>
+            </div></a
+          >
+          <div class="periodic-element intense-work">
+            <div class="periodic-element-inner">
+              <div class="title">
+                <img src="../images/stackoverflow.png" alt=" " />
+              </div>
+              <div class="description">StackOv.</div>
+            </div>
+          </div>
+          <div class="periodic-element intense-work">
+            <div class="periodic-element-inner">
+              <div class="title">
+                <img src="../images/coding.png" alt=" " />
+              </div>
+              <div class="description">Coding</div>
+            </div>
+          </div>
+          <div class="periodic-element just-trying">
+            <div class="periodic-element-inner">
+              <div class="title">
+                <img src="../images/codepen.png" alt=" " />
+              </div>
+              <div class="description">Codepen</div>
+            </div>
+          </div>
+          <div class="periodic-element just-trying">
+            <div class="periodic-element-inner">
+              <div class="title">
+                <img src="../images/travel.jpg" alt=" " />
+              </div>
+              <div class="description">Travel</div>
+            </div>
+          </div>
+          <a
+            class="periodic-element social-media"
+            href="https://www.instagram.com/meowliviaaa/"
+            target="_blank"
+          >
+            <div class="periodic-element-inner">
+              <div class="title">
+                <img src="../images/trello.png" alt=" " />
+              </div>
+              <div class="description">Trello</div>
+            </div></a
+          ><a
+            class="periodic-element fun-stuff"
+            href="https://codepen.io/collection/XPWkdW/"
+            target="_blank"
+          >
+            <div class="periodic-element-inner">
+              <div class="title">
+                <img src="../images/music.png" alt=" " />
+              </div>
+              <div class="description">Musicals</div>
+            </div></a
+          >
+          <div class="periodic-element fun-stuff">
+            <div class="periodic-element-inner">
+              <div class="title">
+                <img src="../images/memes.png" alt=" " />
+              </div>
+              <div class="description">Memes</div>
+            </div>
+          </div>
+          <div class="periodic-element intense-work">
+            <div class="periodic-element-inner">
+              <div class="title">
+                <img src="../images/notion.png" alt=" " />
+              </div>
+              <div class="description">Notion</div>
+            </div>
+          </div>
+          <div class="periodic-element social-media">
+            <div class="periodic-element-inner">
+              <div class="title">
+                <img src="../images/reditt.png" alt=" " />
+              </div>
+              <div class="description">Reddit</div>
+            </div>
+          </div>
+          <div class="periodic-element intense-work">
+            <div class="periodic-element-inner">
+              <div class="title">
+                <img src="../images/research.webp" alt=" " />
+              </div>
+              <div class="description">Research</div>
+            </div>
+          </div>
+          <div class="periodic-element intense-work">
+            <div class="periodic-element-inner">
+              <div class="title">
+                <img src="../images/stats.png" alt=" " />
+              </div>
+              <div class="description">Stats</div>
+            </div>
+          </div>
+          <div class="periodic-element intense-work">
+            <div class="periodic-element-inner">
+              <div class="title">
+                <img src="../images/ad.png" alt=" " />
+              </div>
+              <div class="description">Ads</div>
+            </div>
+          </div>
+        </div>
+        <div class="legend-table"></div>
+      </div>
+
+      <div class="chat">
+        <i class="fa fa-comments" onclick="change2(); signchange2();"></i>
+
+        <div id="c" class="chatbox">
+          <i class="fa fa-times" onclick="change(); signchange(); "></i>
+          <div class="head">
+            Welcome How can i help you
+          </div>
+          <div class="chatSpace"></div>
+          <div class="online"><span class="dot"></span> Online</div>
+          <div id="container">
+            <div id="write">
+              <h2>Input :</h2>
+              <div class="input"></div>
+              <div class="bm blinker" id="blinker">|</div>
+
+              <button class="send">
+                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                Send
+              </button>
+              <br />
+            </div>
+
+            <div id="english">
+              <h2>English Text</h2>
+              <div class="input"></div>
+            </div>
+
+            <ul id="keyboard">
+              <li class="symbol hvr-bubble-float-bottom">
+                <span class="off">`</span><span class="on">~</span>
+              </li>
+              <li class="symbol hvr-bubble-float-bottom">
+                <span class="off"><img src="../img/num/1.png" alt="" /></span
+                ><span class="on">!</span>
+              </li>
+              <li class="symbol hvr-bubble-float-bottom">
+                <span class="off"><img src="../img/num/2.png" alt="" /></span
+                ><span class="on">@</span>
+              </li>
+              <li class="symbol hvr-bubble-float-bottom">
+                <span class="off"><img src="../img/num/3.png" alt="" /></span
+                ><span class="on">#</span>
+              </li>
+              <li class="symbol hvr-bubble-float-bottom">
+                <span class="off"><img src="../img/num/4.png" alt="" /></span
+                ><span class="on">$</span>
+              </li>
+              <li class="symbol hvr-bubble-float-bottom">
+                <span class="off"><img src="../img/num/5.png" alt="" /></span
+                ><span class="on">%</span>
+              </li>
+              <li class="symbol hvr-bubble-float-bottom">
+                <span class="off"><img src="../img/num/6.png" alt="" /></span
+                ><span class="on">^</span>
+              </li>
+              <li class="symbol hvr-bubble-float-bottom">
+                <span class="off"><img src="../img/num/7.png" alt="" /></span
+                ><span class="on">&amp;</span>
+              </li>
+              <li class="symbol hvr-bubble-float-bottom">
+                <span class="off"><img src="../img/num/8.png" alt="" /></span
+                ><span class="on">*</span>
+              </li>
+              <li class="symbol hvr-bubble-float-bottom">
+                <span class="off"><img src="../img/num/9.png" alt="" /></span
+                ><span class="on">(</span>
+              </li>
+              <li class="symbol hvr-bubble-float-bottom">
+                <span class="off"><img src="../img/num/0.png" alt="" /></span
+                ><span class="on">)</span>
+              </li>
+              <li class="symbol hvr-bubble-float-bottom">
+                <span class="off">-</span><span class="on">_</span>
+              </li>
+              <li class="symbol hvr-bubble-float-bottom">
+                <span class="off">=</span><span class="on">+</span>
+              </li>
+              <li class="delete lastitem hvr-bubble-float-bottom">delete</li>
+              <li class="tab hvr-bubble-float-bottom">tab</li>
+              <li class="letter hvr-bubble-float-bottom">
+                <img src="../img/alpha/q.png" alt="" />
+              </li>
+              <li class="letter hvr-bubble-float-bottom">
+                <img src="../img/alpha/w.png" alt="" />
+              </li>
+              <li class="letter hvr-bubble-float-bottom">
+                <img src="../img/alpha/e.png" alt="" />
+              </li>
+              <li class="letter hvr-bubble-float-bottom">
+                <img src="../img/alpha/r.png" alt="" />
+              </li>
+              <li class="letter hvr-bubble-float-bottom">
+                <img src="../img/alpha/t.png" alt="" />
+              </li>
+              <li class="letter hvr-bubble-float-bottom">
+                <img src="../img/alpha/y.png" alt="" />
+              </li>
+              <li class="letter hvr-bubble-float-bottom">
+                <img src="../img/alpha/u.png" alt="" />
+              </li>
+              <li class="letter hvr-bubble-float-bottom">
+                <img src="../img/alpha/i.png" alt="" />
+              </li>
+              <li class="letter hvr-bubble-float-bottom">
+                <img src="../img/alpha/o.png" alt="" />
+              </li>
+              <li class="letter hvr-bubble-float-bottom">
+                <img src="../img/alpha/p.png" alt="" />
+              </li>
+              <li class="symbol hvr-bubble-float-bottom">
+                <span class="off">[</span><span class="on">{</span>
+              </li>
+              <li class="symbol hvr-bubble-float-bottom">
+                <span class="off">]</span><span class="on">}</span>
+              </li>
+              <li class="symbol lastitem hvr-bubble-float-bottom">
+                <span class="off">\</span><span class="on">|</span>
+              </li>
+              <li class="capslock hvr-bubble-float-bottom">caps lock</li>
+              <li class="letter hvr-bubble-float-bottom">
+                <img src="../img/alpha/a.png" alt="" />
+              </li>
+              <li class="letter hvr-bubble-float-bottom">
+                <img src="../img/alpha/s.png" alt="" />
+              </li>
+              <li class="letter hvr-bubble-float-bottom">
+                <img src="../img/alpha/d.png" alt="" />
+              </li>
+              <li class="letter hvr-bubble-float-bottom">
+                <img src="../img/alpha/f.png" alt="" />
+              </li>
+              <li class="letter hvr-bubble-float-bottom">
+                <img src="../img/alpha/g.png" alt="" />
+              </li>
+              <li class="letter hvr-bubble-float-bottom">
+                <img src="../img/alpha/h.png" alt="" />
+              </li>
+              <li class="letter hvr-bubble-float-bottom">
+                <img src="../img/alpha/j.png" alt="" />
+              </li>
+              <li class="letter hvr-bubble-float-bottom">
+                <img src="../img/alpha/k.png" alt="" />
+              </li>
+              <li class="letter hvr-bubble-float-bottom">
+                <img src="../img/alpha/l.png" alt="" />
+              </li>
+              <li class="symbol hvr-bubble-float-bottom">
+                <span class="off">;</span><span class="on">:</span>
+              </li>
+              <li class="symbol hvr-bubble-float-bottom">
+                <span class="off">'</span><span class="on">&quot;</span>
+              </li>
+              <li class="return lastitem hvr-bubble-float-bottom">return</li>
+              <li class="left-shift hvr-bubble-float-bottom">shift</li>
+              <li class="letter hvr-bubble-float-bottom">
+                <img src="../img/alpha/z.png" alt="" />
+              </li>
+              <li class="letter hvr-bubble-float-bottom">
+                <img src="../img/alpha/x.png" alt="" />
+              </li>
+              <li class="letter hvr-bubble-float-bottom">
+                <img src="../img/alpha/c.png" alt="" />
+              </li>
+              <li class="letter hvr-bubble-float-bottom">
+                <img src="../img/alpha/v.png" alt="" />
+              </li>
+              <li class="letter hvr-bubble-float-bottom">
+                <img src="../img/alpha/b.png" alt="" />
+              </li>
+              <li class="letter hvr-bubble-float-bottom">
+                <img src="../img/alpha/a.png" alt="" />
+              </li>
+              <li class="letter hvr-bubble-float-bottom">
+                <img src="../img/alpha/m.png" alt="" />
+              </li>
+              <li class="symbol hvr-bubble-float-bottom">
+                <span class="off">,</span><span class="on">&lt;</span>
+              </li>
+              <li class="symbol hvr-bubble-float-bottom">
+                <span class="off">.</span><span class="on">&gt;</span>
+              </li>
+              <li class="symbol hvr-bubble-float-bottom">
+                <span class="off">/</span><span class="on">?</span>
+              </li>
+              <li class="right-shift lastitem hvr-bubble-float-bottom">
+                shift
+              </li>
+              <li class="space lastitem hvr-bubble-float-bottom">space</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <img class="wave" src="../images/wave.png" alt="wave" />
+        <p>
+          Liked Our project ?
+          <!-- <hr class="hr1" >
+       <hr class="hr2" > 
+       <hr class="hr3" >  -->
+
+          <span>
+            Our project is available on github at
+            https://github.com/altruist-sih
+          </span>
+        </p>
+
+        <div class="arch"></div>
+        <div class="content">
+          <img src="../images/Logo.png" alt="logo" />
+          <i class="fa fa-blind" aria-hidden="true"></i>
+          <i class="fa fa-deaf" aria-hidden="true"></i>
+          <i class="fa fa-wheelchair" aria-hidden="true"></i>
+          <i class="fa fa-medkit" aria-hidden="true"></i>
+          <div class="contentText">
+            <div class="team">
+              <h2>Team Altruist</h2>
+              <h3>
+                We team altrusit consist of 6 members and we have choosen the
+                project to help the differtaly abled people under The ministry
+                of Rural Development
+              </h3>
+            </div>
+            <div class="blind">
+              <h2>Blind</h2>
+              <h3>
+                We have worked on the blind by using the speech to text and text
+                to speech technology
+              </h3>
+            </div>
+            <div class="deaf">
+              <h2>Deaf</h2>
+              <h3>
+                We have build a sign to text and text to sign language model and
+                it is operated using sign language only
+              </h3>
+            </div>
+            <div class="tetra">
+              <h2>Tetra-Ammelia</h2>
+              <h3>
+                This will be working as same as a blind section using speech to
+                text but the UI would be better
+              </h3>
+            </div>
+            <div class="dimm">
+              <h2>Dimmensia</h2>
+              <h3>
+                In this we have worked on the deficeny of not remmembing the
+                purpose of the visit so we have used path
+              </h3>
+            </div>
+
+            <div class="contactUs">
+              <h2>Contact us</h2>
+              <i class="fa fa-instagram" aria-hidden="true"> </i>
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+              <i class="fa fa-github" aria-hidden="true"></i>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <i class="fa fa-snapchat-ghost" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function change() {
+        var x = document.getElementById("c");
+        if (x.style.visibility === "hidden") {
+          x.style.visibility = "visible";
+        } else {
+          x.style.visibility = "hidden";
+        }
+      }
+
+      function signchange() {
+        var y = document.getElementById("sc");
+        if (y.style.visibility === "hidden") {
+          y.style.visibility = "visible";
+        } else {
+          y.style.visibility = "hidden";
+        }
+      }
+    </script>
+    <script>
+      function change2() {
+        document.getElementById("c").style.visibility = "visible";
+      }
+
+      function signchange2() {
+        document.getElementById("sc").style.visibility = "visible";
+      }
+    </script>
+
+    <script>
+      let trainingData = [];
+
+      const labels = [
+        "None",
+        "✊ (Rock)",
+        "🖐 (Paper)",
+        "✌️ (Scissors)",
+        "👌 (Letter D)",
+        "👍 (Thumb Up)",
+        "🖖 (Vulcan)",
+        "🤟 (ILY - I Love You)",
+        "Sign-A (A)",
+        "Sign-B (B)",
+        "Sign-C (C)",
+        "Sign-E (E)",
+        "Sign-F (F)",
+        "Sign-G (G)",
+        "Sign-H (H)",
+        "Sign-I (I)",
+        "Sign-J (J)",
+        "Sign-K (K)",
+        "Sign-L (L)",
+        "Sign-M (M)",
+        "Sign-N (N)",
+        "Sign-O (O)",
+        "Sign-P (P)",
+        "Sign-Q (Q)",
+        "Sign-R (R)",
+        "Sign-S (S)",
+        "Sign-T (T)",
+        "Sign-U (U)",
+        "Sign-V (V)",
+        "Sign-W (W)",
+        "Sign-X (X)",
+        "Sign-Y (Y)",
+        "Sign-Z (Z)",
+      ];
+
+      function setText(text) {
+        document.getElementById("status").innerText = text;
+      }
+
+      async function predictImage() {
+        if (!hasTrained) {
+          return;
+        } // Skip prediction until trained
+        const img = await getWebcamImage();
+        let result = tf.tidy(() => {
+          const input = img.reshape([1, 224, 224, 3]);
+          return model.predict(input);
+        });
+        img.dispose();
+        let prediction = await result.data();
+        result.dispose();
+        // Get the index of the highest value in the prediction
+        let id = prediction.indexOf(Math.max(...prediction));
+        setText(labels[id]);
+      }
+
+      function createTransferModel(model) {
+        // Create the truncated base model (remove the "top" layers, classification + bottleneck layers)
+        const bottleneck = model.getLayer("dropout"); // This is the final layer before the conv_pred pre-trained classification layer
+        const baseModel = tf.model({
+          inputs: model.inputs,
+          outputs: bottleneck.output,
+        });
+        // Freeze the convolutional base
+        for (const layer of baseModel.layers) {
+          layer.trainable = false;
+        }
+        // Add a classification head
+        const newHead = tf.sequential();
+        newHead.add(
+          tf.layers.flatten({
+            inputShape: baseModel.outputs[0].shape.slice(1),
+          })
+        );
+        newHead.add(tf.layers.dense({ units: 100, activation: "relu" }));
+        newHead.add(tf.layers.dense({ units: 100, activation: "relu" }));
+        newHead.add(tf.layers.dense({ units: 10, activation: "relu" }));
+        newHead.add(
+          tf.layers.dense({
+            units: labels.length,
+            kernelInitializer: "varianceScaling",
+            useBias: false,
+            activation: "softmax",
+          })
+        );
+        // Build the new model
+        const newOutput = newHead.apply(baseModel.outputs[0]);
+        const newModel = tf.model({
+          inputs: baseModel.inputs,
+          outputs: newOutput,
+        });
+        return newModel;
+      }
+
+      async function trainModel() {
+        hasTrained = false;
+        setText("Training...");
+
+        // Setup training data
+        const imageSamples = [];
+        const targetSamples = [];
+        trainingData.forEach((sample) => {
+          imageSamples.push(sample.image);
+          let cat = [];
+          for (let c = 0; c < labels.length; c++) {
+            cat.push(c === sample.category ? 1 : 0);
+          }
+          targetSamples.push(tf.tensor1d(cat));
+        });
+        const xs = tf.stack(imageSamples);
+        const ys = tf.stack(targetSamples);
+
+        // Train the model on new image samples
+        model.compile({
+          loss: "meanSquaredError",
+          optimizer: "adam",
+          metrics: ["acc"],
+        });
+
+        await model.fit(xs, ys, {
+          epochs: 30,
+          shuffle: true,
+          callbacks: {
+            onEpochEnd: (epoch, logs) => {
+              console.log("Epoch #", epoch, logs);
+            },
+          },
+        });
+        hasTrained = true;
+      }
+
+      // Mobilenet v1 0.25 224x224 model
+      const mobilenet =
+        "https://storage.googleapis.com/tfjs-models/tfjs/mobilenet_v1_0.25_224/model.json";
+
+      let model = null;
+      let hasTrained = false;
+
+      async function setupWebcam() {
+        return new Promise((resolve, reject) => {
+          const webcamElement = document.getElementById("webcam");
+          const navigatorAny = navigator;
+          navigator.getUserMedia =
+            navigator.getUserMedia ||
+            navigatorAny.webkitGetUserMedia ||
+            navigatorAny.mozGetUserMedia ||
+            navigatorAny.msGetUserMedia;
+          if (navigator.getUserMedia) {
+            navigator.getUserMedia(
+              { video: true },
+              (stream) => {
+                webcamElement.srcObject = stream;
+                webcamElement.addEventListener("loadeddata", resolve, false);
+              },
+              (error) => reject()
+            );
+          } else {
+            reject();
+          }
+        });
+      }
+
+      async function getWebcamImage() {
+        const img = (await webcam.capture()).toFloat();
+        const normalized = img.div(127).sub(1);
+        return normalized;
+      }
+
+      async function captureSample(category) {
+        trainingData.push({
+          image: await getWebcamImage(),
+          category: category,
+        });
+        setText("Captured: " + labels[category]);
+      }
+
+      let webcam = null;
+
+      (async () => {
+        // Load the model
+        model = await tf.loadLayersModel(mobilenet);
+        model = createTransferModel(model);
+        await setupWebcam();
+        webcam = await tf.data.webcam(document.getElementById("webcam"));
+        // Setup prediction every 200 ms
+        setInterval(predictImage, 200);
+      })();
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css"></script>
+
+    <script src="/Altruist-SIH-saksham/Altruist-SIH-saksham/Projects for landing page/Deneb/assets/js/vendor/jquery-3.5.1.min.js"></script>
+    <!--modernizr js-->
+    <script src="/Altruist-SIH-saksham/Altruist-SIH-saksham/Projects for landing page/Deneb/assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <!-- Bootstrap js  -->
+    <script src="/Altruist-SIH-saksham/Altruist-SIH-saksham/Projects for landing page/Deneb/assets/js/vendor/bootstrap.min.js"></script>
+    <script src="/Altruist-SIH-saksham/Altruist-SIH-saksham/Projects for landing page/Deneb/assets/js/vendor/popper.min.js"></script>
+    <!-- slick fader js  -->
+    <script src="/Altruist-SIH-saksham/Altruist-SIH-saksham/Projects for landing page/Deneb/assets/js/vendor/slick.min.js"></script>
+
+    <!-- isotope js  -->
+    <script src="/Altruist-SIH-saksham/Altruist-SIH-saksham/Projects for landing page/Deneb/assets/js/vendor/isotope.min.js"></script>
+    <!-- imageloaded js-->
+    <script src="/Altruist-SIH-saksham/Altruist-SIH-saksham/Projects for landing page/Deneb/assets/js/vendor/imagesloaded.min.js"></script>
+    <!--sidebar js-->
+    <script src="/Altruist-SIH-saksham/Altruist-SIH-saksham/Projects for landing page/Deneb/assets/js/vendor/sidebar-menu.js"></script>
+    <!--wow js-->
+    <script src="/Altruist-SIH-saksham/Altruist-SIH-saksham/Projects for landing page/Deneb/assets/js/vendor/wow.min.js"></script>
+    <!-- Disqus Comments js-->
+    <script
+      id="dsq-count-scr"
+      src="../deneb-1.disqus.com/count.js"
+      async
+    ></script>
+    <!-- Simple Jekyll Search js-->
+    <script src="/Altruist-SIH-saksham/Altruist-SIH-saksham/Projects for landing page/Deneb/assets/js/simple-jekyll-search.min.js"></script>
+    <!-- custom js  -->
+    <script src="/Altruist-SIH-saksham/Altruist-SIH-saksham/Projects for landing page/Deneb/assets/js/custom.js"></script>
+
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/ML/sign-keyboard-mritunjay/js/keyboard.js"
+    ></script>
+  </body>
+</html>
