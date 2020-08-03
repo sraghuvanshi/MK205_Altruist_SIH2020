@@ -1,0 +1,19 @@
+<sigml>
+<hns_sign gloss="whistle">
+	<hamnosys_nonmanual>
+	</hamnosys_nonmanual>
+	<hamnosys_manual>
+		<hamcee12/>
+		<hamextfingerl/>
+		<hampalml/>
+		<hamlips/>
+		<hamtouch/>
+		<hamplus/>
+		<hamcee12/>
+		<hamextfingerl/>
+		<hampalmul/>
+		<hamlips/>
+		<hamtouch/>
+	</hamnosys_manual>
+</hns_sign>
+</sigml>

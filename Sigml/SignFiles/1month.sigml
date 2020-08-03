@@ -1,0 +1,32 @@
+<sigml>
+<hns_sign gloss="1month">
+	<hamnosys_nonmanual>
+	</hamnosys_nonmanual>
+	<hamnosys_manual>
+		<hamfinger2/>
+		<hamthumb/>
+		<hamfingerstraightmod/>
+		<hamextfingeru/>
+		<hampalml/>
+		<hamshoulders/>
+		<hamlrat/>
+		<hamnomotion/>
+		<hamplus/>
+		<hampinchall/>
+		<hamthumbacrossmod/>
+		<hamextfingeru/>
+		<hampalml/>
+		<hamshoulders/>
+		<hamlrat/>
+		<hamreplace/>
+		<hamfinger2/>
+		<hamthumbacrossmod/>
+		<hamextfingerl/>
+		<hampalmdl/>
+		<hamshoulders/>
+		<hambetween/>
+		<hamlrat/>
+		<hamshoulders/>
+	</hamnosys_manual>
+</hns_sign>
+</sigml>

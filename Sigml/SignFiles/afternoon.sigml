@@ -1,0 +1,23 @@
+<sigml>
+<hns_sign gloss="afternoon">
+	<hamnosys_nonmanual>
+	</hamnosys_nonmanual>
+	<hamnosys_manual>
+		<hamfinger2345/>
+		<hamthumboutmod/>
+		<hamextfingeru/>
+		<hampalml/>
+		<hamshouldertop/>
+		<hamlrbeside/>
+		<hambetween/>
+		<hamear/>
+		<hamlrat/>
+		<hamclose/>
+		<hamseqbegin/>
+		<hammoveur/>
+		<hammovedl/>
+		<hamseqend/>
+		<hamrepeatfromstart/>
+	</hamnosys_manual>
+</hns_sign>
+</sigml>

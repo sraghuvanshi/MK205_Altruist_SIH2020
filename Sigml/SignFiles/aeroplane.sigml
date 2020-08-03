@@ -1,0 +1,21 @@
+<sigml>
+<hns_sign gloss="aeroplane">
+	<hamnosys_nonmanual>
+	</hamnosys_nonmanual>
+	<hamnosys_manual>
+		<hamfinger2/>
+		<hamthumboutmod/>
+		<hampinky/>
+		<hamextfingeru/>
+		<hambetween/>
+		<hamextfingerol/>
+		<hampalmd/>
+		<hamneck/>
+		<hamlrat/>
+		<hamclose/>
+		<hamnomotion/>
+		<hammoveul/>
+		<hamlargemod/>
+	</hamnosys_manual>
+</hns_sign>
+</sigml>

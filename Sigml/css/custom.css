@@ -1,0 +1,38 @@
+body {
+	margin-top:110px!important;
+  background-color: #0d1a26;
+  /*font-family: Proxima Nova;*/
+  font-family: Proxima Nova ,sans-serif;
+
+}
+/* nav css start here */
+nav {min-height:62px!important;background:#152535!important;border:none!important;-webkit-box-shadow: 0 0 50px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 50px 0px rgba(0, 0, 0, 0.4);}
+  nav .container{padding-top:7px; color: white;}
+  nav #navbar {border:none!important; color: white;}
+  nav a{font-weight:bold; color: white;}
+  .active a{background-color:#337ab7!important;color:white!important;}
+  .icon-bar {background-color:#e6e6e6!important;}
+  /* nav css ends here*/
+  /*css for word displayed under avatar*/
+  #currentWord{
+    color:white;
+    background-color:  #000B15;
+    /*border-radius: 25px;*/
+    width: 63%;
+    margin: 0 auto;
+    margin-top: 0px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 22px;
+    padding: 5px;
+    font-weight: bold;
+  }
+  #debugger {
+    color: white;
+    max-height: 200px;
+    overflow-y: scroll;
+    border: 1px solid black;
+    padding: 16px;
+    margin-top: 5px;	
+  }
