@@ -3,8 +3,39 @@
 
 <h1 align="center">
 	<img src="https://video-altruist.herokuapp.com/assets/logo.png" alt="Altruist Logo" width="250"><br>
-	SMART INDIA HACKATHON 2020 - TEAM ALTRUIST	
+	SMART INDIA HACKATHON 2020
 </h1>
+
+Team Altruist
+<br>
+</h1>
+<h4 align="center">Emp</h4>
+<p align="center">
+	<a href="">
+		<img src="https://img.shields.io/badge/Tetra--Amelia-Face%20Tracking-green">
+	</a>
+	<a href="">
+		<img src="https://img.shields.io/badge/Text%20to%20Sign-Model-blue"
+		alt="Gitter">
+	</a>
+	<a href="">
+		<img src="https://img.shields.io/badge/Dementia-AI%20Chatbot-red">
+	</a>
+	<a href="">
+		<img src="https://img.shields.io/badge/Blind-Speech%20Recognition-brightgreen">
+	</a>
+	<a href="">
+		<img src="https://img.shields.io/badge/Voice%20Assisted-Video%20Chat-orange">
+	</a>
+</p>
+
+<p align="center">
+	<a href="1. Tetra Amelia :">Tetra amelia</a> •
+	<a href="#Data-structure">Visually Impaired</a> •
+	<a href="#How-to-launch">Speech/Hearing Impaired</a> •
+	<a href="#How-to-rerun">Dementia</a> •
+	<a href="#Environment">Voice Assistant Video Call</a> 
+</p>
 
 ## PROBLEM STATEMENT
 
@@ -13,7 +44,7 @@
 **Problem Statement** - Making websites meaningful for differently Abled citizens with open source tools.
 
 
-## Understanding the Problem Statement
+## UNDERSTANDING THE PROBLEM STATEMENT
 
 - Ministry of Rural Development is currently running several schemes and programs primarily focusing on the *development of rural poor*. It is important to note that as *per census 2011 (2016 updated) – In India out of the 121 Cr population, 2.68 Cr persons are disabled and  (69%) of the disabled population resided in rural areas (1.86 Cr). One more key concern is that around 51% of the total disabled population in rural areas is not literate.* 
 
@@ -21,7 +52,31 @@
 
 - Features to be introduced in website that *empathise and synchronize* with the rural audience and how they can enjoy the benefits with even minimal Digital Literacy.
 
-## Our Solution
+## Implemented on local Rural.nic.in <a href="http://rural-altruist.surge.sh/">View Demo</a>
+<h1 align="center">
+	<img src="" alt="Altruist Logo" width="250"><br>
+</h1>
+<h1 align="center">
+	<img src="" alt="Altruist Logo" width="250"><br>
+</h1>
+<h1 align="center">
+	<img src="" alt="Altruist Logo" width="250"><br>
+</h1>
+<h1 align="center">
+	<img src="" alt="Altruist Logo" width="250"><br>
+</h1>
+<h1 align="center">
+	<img src="" alt="Altruist Logo" width="250"><br>
+</h1>
+<h1 align="center">
+	<img src="" alt="Altruist Logo" width="250"><br>
+</h1>
+<h1 align="center">
+	<img src="" alt="Altruist Logo" width="250"><br>
+</h1>
+
+
+## SOLUTION
 
 We will be creating a **Landing page** which will *distribute our audience* and it will lead to *different sections specific to a disability*. We have identified and worked for some of the common disabilities possible in a person **to make their Web experience more accessible, smoother and easier.**
 
@@ -44,13 +99,13 @@ We will be creating a **Landing page** which will *distribute our audience* and 
 - *Sign language instruction / illustration* helping in traversal of the Website.
 - *Communication with Government Officials.*
 - Using *CNN & Keras model* for developing *sign to text*. 
-       
+
 ### **4. Dementia :**<a href="http://main-altruist.surge.sh/Dimmenia.html">View Demo</a>
 - *AI Chatbot based on NLP *Dialogflow*.
 - *Sequencial reminder* of the main purpose of visit of end-user.
 - *Visual Imagery* for easier selection and traversal through website
 - An extremely simple and *easy to use* website for *easier synchronization with the brain.*                               
-   
+
 ### **5. Voice Assisted Video Call App** <a href="https://video-altruist.herokuapp.com/">View Demo</a>
 
 
