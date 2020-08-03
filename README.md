@@ -9,7 +9,7 @@
 <h1 align="center">Team Altruist</h1>
 <br>
 </h1>
-<h4 align="center">We empathise to empower - realising the dream of Aatmanirbhar Bharat 🇮🇳</h4>
+<h4 align="center">We empathise to empower - realising the dream of Aatmanirbhar Bharat </h4>
 <p align="center">
 	<a href="https://covid-altruist.herokuapp.com/">
 		<img src="https://img.shields.io/badge/Tetra--Amelia-Face%20Tracking-green">
@@ -37,14 +37,14 @@
 	<a href="#Environment">Voice Assistant Video Call</a> 
 </p>
 
-## PROBLEM STATEMENT
+## Problem Statement
 
 **Ministry/Organization Name** - <a href="https://rural.nic.in/">Ministry of Rural Development</a>  
 
 **Problem Statement** - Making websites meaningful for differently Abled citizens with open source tools.
 
 
-## UNDERSTANDING THE PROBLEM STATEMENT
+## Understanding the Problem Statement
 
 - Ministry of Rural Development is currently running several schemes and programs primarily focusing on the *development of rural poor*. It is important to note that as *per census 2011 (2016 updated) – In India out of the 121 Cr population, 2.68 Cr persons are disabled and  (69%) of the disabled population resided in rural areas (1.86 Cr). One more key concern is that around 51% of the total disabled population in rural areas is not literate.* 
 
@@ -77,7 +77,7 @@
 </h1>
 
 
-## SOLUTION
+## Solution
 
 We will be creating a **Landing page** which will *distribute our audience* and it will lead to *different sections specific to a disability*. We have identified and worked for some of the common disabilities possible in a person **to make their Web experience more accessible, smoother and easier.**
 
