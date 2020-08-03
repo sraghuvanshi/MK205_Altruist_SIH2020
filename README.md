@@ -11,20 +11,20 @@
 </h1>
 <h4 align="center">We empathise to empower - realising the dream of Aatmanirbhar Bharat 🇮🇳</h4>
 <p align="center">
-	<a href="">
+	<a href="https://covid-altruist.herokuapp.com/">
 		<img src="https://img.shields.io/badge/Tetra--Amelia-Face%20Tracking-green">
 	</a>
-	<a href="">
+	<a href="http://sign01.herokuapp.com/">
 		<img src="https://img.shields.io/badge/Text%20to%20Sign-Model-blue"
 		alt="Gitter">
 	</a>
-	<a href="">
+	<a href="http://main-altruist.surge.sh/Dimmenia.html">
 		<img src="https://img.shields.io/badge/Dementia-AI%20Chatbot-red">
 	</a>
-	<a href="">
+	<a href="https://blind-altruist.herokuapp.com/">
 		<img src="https://img.shields.io/badge/Blind-Speech%20Recognition-brightgreen">
 	</a>
-	<a href="">
+	<a href="https://video-altruist.herokuapp.com/">
 		<img src="https://img.shields.io/badge/Voice%20Assisted-Video%20Chat-orange">
 	</a>
 </p>
