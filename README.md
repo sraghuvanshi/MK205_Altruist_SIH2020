@@ -2,12 +2,11 @@
 <!-- ![Altruist Logo](https://video-altruist.herokuapp.com/assets/logo.png) -->
 
 <h1 align="center">
-	SMART INDIA HACKATHON 2020 - TEAM ALTRUIST
-	<br>
-	<img src="https://video-altruist.herokuapp.com/assets/logo.png" alt="Altruist Logo" width="250">
+	<img src="https://video-altruist.herokuapp.com/assets/logo.png" alt="Altruist Logo" width="250"><br>
+	SMART INDIA HACKATHON 2020 - TEAM ALTRUIST	
 </h1>
 
-## PS DETAILS
+## PROBLEM STATEMENT
 
 **Ministry/Organization Name** - <a href="https://rural.nic.in/">Ministry of Rural Development</a>  
 
@@ -26,30 +25,33 @@
 
 We will be creating a **Landing page** which will *distribute our audience* and it will lead to *different sections specific to a disability*. We have identified and worked for some of the common disabilities possible in a person **to make their Web experience more accessible, smoother and easier.**
 
-**1. Visually Impaired :**
-- *Speech* to Command for easier website traversal.
-- *Graphics* that support color blindness.
-- Audio *Recorded messages for traversal* throughout website.
-
-**2. Tetra Amelia :**
+**1. Tetra Amelia :** <a href="https://covid-altruist.herokuapp.com/">View Demo</a>
+- 
 - Real *smooth UI/UX* for the people suffering from Tetra Amelia
 - *Speech* to Command facility for the website traversal
-- *Audio Recorded messages* for more accessible website experience.
+- *Speech synthesis* for more accessible website experience.
 - *Voice-Assisted Video Chat*
 - *Head and Eye Tracking* [WIP}
 
-**3.  Speech impaired/Hearing Impaired :** 
+**2. Visually Impaired :** <a href="https://blind-altruist.herokuapp.com/">View Demo</a>
+- *Speech* to Command for easier website traversal.
+- *Graphics* that support color blindness.
+- Web scrapping for the content present on the page.
+- *Speech synthesis* for narrating the content present throughout the website.
+
+**3. Speech impaired/Hearing Impaired :** <a href="http://sign01.herokuapp.com/">View Demo</a>
 - Creating an interactive model based on the *HamBurg Notation and SiGML* implementation.
 - *Sign language keyboard* for sending and receiving messages [WIP}
 - *Sign language instruction / illustration* helping in traversal of the Website.
-- *Communication with Government Officials.* 
+- *Communication with Government Officials.*
+- Using *CNN & Keras model* for developing *sign to text*. 
        
-**4. Dementia :**
+**4. Dementia :**<a href="http://main-altruist.surge.sh/Dimmenia.html">View Demo</a>
+- *AI Chatbot based on NLP *Dialogflow*.
+- *Sequencial reminder* of the main purpose of visit of end-user.
 - *Visual Imagery* for easier selection and traversal through website
 - An extremely simple and *easy to use* website for *easier synchronization with the brain.*                               
    
-**5.** A **chat room** shall also be developed which shall completely *work on the sign language and      
-speech synthesis.*
-
+**5. Voice Assisted Video Call App** <a href="https://video-altruist.herokuapp.com/">View Demo</a>
 
 
