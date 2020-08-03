@@ -4,12 +4,12 @@
 <h1 align="center">
 	<img src="https://video-altruist.herokuapp.com/assets/logo.png" alt="Altruist Logo" width="250"><br>
 	SMART INDIA HACKATHON 2020
-</h1>
 
-Team Altruist
+</h1>
+<h1 align="center">Team Altruist</h1>
 <br>
 </h1>
-<h4 align="center">Emp</h4>
+<h4 align="center">We empathise to empower - realising the dream of Aatmanirbhar Bharat 🇮🇳</h4>
 <p align="center">
 	<a href="">
 		<img src="https://img.shields.io/badge/Tetra--Amelia-Face%20Tracking-green">
@@ -30,7 +30,7 @@ Team Altruist
 </p>
 
 <p align="center">
-	<a href="1. Tetra Amelia :">Tetra amelia</a> •
+	<a href="#">Tetra amelia</a> •
 	<a href="#Data-structure">Visually Impaired</a> •
 	<a href="#How-to-launch">Speech/Hearing Impaired</a> •
 	<a href="#How-to-rerun">Dementia</a> •
@@ -52,8 +52,8 @@ Team Altruist
 
 - Features to be introduced in website that *empathise and synchronize* with the rural audience and how they can enjoy the benefits with even minimal Digital Literacy.
 
-## Implemented on local Rural.nic.in <a href="http://rural-altruist.surge.sh/">View Demo</a>
-<h1 align="center">
+## Implemented on local Rural.nic.in <a href="http://rural-altruist.surge.sh/"> View Demo</a>
+<!-- <h1 align="center">
 	<img src="" alt="Altruist Logo" width="250"><br>
 </h1>
 <h1 align="center">
@@ -73,7 +73,7 @@ Team Altruist
 </h1>
 <h1 align="center">
 	<img src="" alt="Altruist Logo" width="250"><br>
-</h1>
+</h1> -->
 
 
 ## SOLUTION
