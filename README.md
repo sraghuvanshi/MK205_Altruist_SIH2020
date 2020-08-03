@@ -55,50 +55,50 @@
 
 ## Implemented on local Rural.nic.in <a href="http://rural-altruist.surge.sh/"> View Demo</a>
 
-<h1 align="center">
+<h5 align="center">
 	<img src="readme-assests/Screenshot (140).png" alt="Altruist Logo" width="450"  height="250"><br>
 	<p>Our features integrated on the main website of the Ministry of Rural Development.</p>
-</h1>
-<h1 align="center">
+</h5>
+<h5 align="center">
 	<img src="readme-assests/Screenshot (141).png" alt="Altruist Logo" width="450" height="250"><br>
 	<p>Sign Keyboard integrated on the main website of the Ministry of Rural Development.</p>
-</h1>
-<h1 align="center">
+</h5>
+<h5 align="center">
 	<img src="readme-assests/Screenshot (186).png" alt="Altruist Logo" width="450" height="250"><br>
 	<p>Landing page of Text to Sign Converting Model</p>
-</h1>
-<h1 align="center">
+</h5>
+<h5 align="center">
 	<img src="readme-assests/Screenshot (187).png" alt="Altruist Logo" width="450" height="250"><br>
 	<p>3D Text to Sign Converting Model in action</p>
-</h1>
-<h1 align="center">
+</h5>
+<h5 align="center">
 	<img src="readme-assests/Screenshot (150).png" alt="Altruist Logo" width="450" height="250"><br>
 	<p>Head tracking, Speech Synthesis & Facial expression recognition on Covid-19 Updates Page.</p>
-</h1>
-<h1 align="center">
+</h5>
+<h5 align="center">
 	<img src="readme-assests/Screenshot (137).png" alt="Altruist Logo" width="450" height="250"><br>
 	<p>Reminder on dementia page</p>
-</h1>
-<h1 align="center">
+</h5>
+<h5 align="center">
 	<img src="readme-assests/Screenshot (136).png" alt="Altruist Logo" width="450" height="250"><br>
 	<p>AI Chatbot for Covid-19 updates.</p>
-</h1>
-<h1 align="center">
+</h5>
+<h5 align="center">
 	<img src="readme-assests/Screenshot (132).png" alt="Altruist Logo" width="450" height="250"><br>
 	<p>Landing page  for visually impaired.</p>
-</h1>
-<h1 align="center">
+</h5>
+<h5 align="center">
 	<img src="readme-assests/Screenshot (133).png" alt="Altruist Logo" width="450" height="250"><br>
 	<p>Bifurcation webpages to address different disabilities.</p>
-</h1>
-<h1 align="center">
+</h5>
+<h5 align="center">
 	<img src="readme-assests/Screenshot (139).png" alt="Altruist Logo" width="450" height="250"><br>
 	<p>Voice assisted Video Chat</p>
-</h1>
-<h1 align="center">
+</h5>
+<h5 align="center">
 	<img src="readme-assests/Screenshot (130).png" alt="Altruist Logo" width="450" height="250"><br>
 	<p>Head tracking succesfully in low light conditons as well.</p>
-</h1>
+</h5>
 
 
 
