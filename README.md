@@ -25,32 +25,32 @@
 
 We will be creating a **Landing page** which will *distribute our audience* and it will lead to *different sections specific to a disability*. We have identified and worked for some of the common disabilities possible in a person **to make their Web experience more accessible, smoother and easier.**
 
-**1. Tetra Amelia :** <a href="https://covid-altruist.herokuapp.com/">View Demo</a>
--*Head tracking & Facial expression recognition using webGazer & bodyPix*. 
+### **1. Tetra Amelia :** <a href="https://covid-altruist.herokuapp.com/">View Demo</a>
+- *Head tracking & Facial expression recognition using webGazer & bodyPix*. 
 - Real *smooth UI/UX* for the people suffering from Tetra Amelia
 - *Speech* to Command facility for the website traversal
 - *Speech synthesis* for more accessible website experience.
 - *Voice-Assisted Video Chat*
 
-**2. Visually Impaired :** <a href="https://blind-altruist.herokuapp.com/">View Demo</a>
+### **2. Visually Impaired :** <a href="https://blind-altruist.herokuapp.com/">View Demo</a>
 - *Speech* to Command for easier website traversal.
 - *Graphics* that support color blindness.
 - Web scrapping for the content present on the page.
 - *Speech synthesis* for narrating the content present throughout the website.
 
-**3. Speech impaired/Hearing Impaired :** <a href="http://sign01.herokuapp.com/">View Demo</a>
+### **3. Speech impaired/Hearing Impaired :** <a href="http://sign01.herokuapp.com/">View Demo</a>
 - Creating an interactive model based on the *HamBurg Notation and SiGML* implementation.
 - *Sign language keyboard* for sending and receiving messages [WIP}
 - *Sign language instruction / illustration* helping in traversal of the Website.
 - *Communication with Government Officials.*
 - Using *CNN & Keras model* for developing *sign to text*. 
        
-**4. Dementia :**<a href="http://main-altruist.surge.sh/Dimmenia.html">View Demo</a>
+### **4. Dementia :**<a href="http://main-altruist.surge.sh/Dimmenia.html">View Demo</a>
 - *AI Chatbot based on NLP *Dialogflow*.
 - *Sequencial reminder* of the main purpose of visit of end-user.
 - *Visual Imagery* for easier selection and traversal through website
 - An extremely simple and *easy to use* website for *easier synchronization with the brain.*                               
    
-**5. Voice Assisted Video Call App** <a href="https://video-altruist.herokuapp.com/">View Demo</a>
+### **5. Voice Assisted Video Call App** <a href="https://video-altruist.herokuapp.com/">View Demo</a>
 
 
