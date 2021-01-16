@@ -95,10 +95,6 @@
 	<img src="readme-assests/Screenshot (139).png" alt="Altruist Logo" width="450" height="250"><br>
 	<p>Voice assisted Video Chat</p>
 </h5>
-<h5 align="center">
-	<img src="readme-assests/Screenshot (130).png" alt="Altruist Logo" width="450" height="250"><br>
-	<p>Head tracking succesfully in low light conditons as well.</p>
-</h5>
 
 
 
